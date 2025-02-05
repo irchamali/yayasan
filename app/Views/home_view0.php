@@ -84,7 +84,7 @@
 					<!-- Feature Block One -->
 					<div class="feature-block_one col-lg-4 col-md-6 col-sm-12">
 						<div class="feature-block_one-inner">
-							<div class="feature-block_one-icon flaticon-iso"></div>
+							<div class="feature-block_one-icon flaticon-education"></div>
 							Pemberdayaan <br> Masyarakat
 						</div>
 					</div>

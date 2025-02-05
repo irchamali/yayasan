@@ -88,47 +88,33 @@
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
 										<li class="dropdown"><a href="#">Home</a>
+										</li>
+										<li class="dropdown"><a href="#">Tentang</a>
 											<ul>
-												<li><a href="index.html">Homepage 01</a></li>
-												<li><a href="index-2.html">Homepage 02</a></li>
-												<li><a href="index-3.html">Homepage 03</a></li>
-												<li class="dropdown"><a href="#">Header Styles</a>
+												<li><a href="about.html">Visi Misi</a></li>
+												<li><a href="price.html">Nilai-nilai</a></li>
+												<li class="dropdown"><a href="#">Profil</a>
 													<ul>
-														<li><a href="index.html">Header 01</a></li>
-														<li><a href="index-2.html">Header 02</a></li>
-														<li><a href="index-3.html">Header 03</a></li>
+														<li><a href="events.html">Pengurus</a></li>
+														<li><a href="event-detail.html">Struktur Organisasi</a></li>
 													</ul>
 												</li>
 											</ul>
 										</li>
-										<li class="dropdown"><a href="#">About</a>
+										<li class="dropdown"><a href="#">Program</a>
 											<ul>
-												<li><a href="about.html">About us</a></li>
-												<li><a href="price.html">price</a></li>
-												<li class="dropdown"><a href="#">events</a>
-													<ul>
-														<li><a href="events.html">events</a></li>
-														<li><a href="event-detail.html">Event Detail</a></li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li class="dropdown"><a href="#">Pages</a>
-											<ul>
-												<li><a href="faq.html">Faq's</a></li>
-												<li><a href="prayer-time.html">Prayer Time</a></li>
-												<li><a href="record-class.html">Record Class</a></li>
-												<li><a href="register.html">register</a></li>
-												<li><a href="not-found.html">Not Found</a></li>
-												<li class="dropdown"><a href="#">scholars</a>
+												<li><a href="faq.html">Pendidikan</a></li>
+												<li><a href="register.html">Pemberdayaan</a></li>
+												<li><a href="not-found.html">Sosial dan Dakwah</a></li>
+												<!-- <li class="dropdown"><a href="#">scholars</a>
 													<ul>
 														<li><a href="scholars.html">scholars</a></li>
 														<li><a href="scholar-detail.html">scholar detail</a></li>
 													</ul>
-												</li>
+												</li> -->
 											</ul>
 										</li>
-										<li class="dropdown"><a href="#">service</a>
+										<!-- <li class="dropdown"><a href="#">service</a>
 											<ul>
 												<li><a href="services.html">Services</a></li>
 												<li><a href="service-detail.html">service detail</a></li>
@@ -139,15 +125,16 @@
 												<li><a href="courses.html">courses</a></li>
 												<li><a href="course-detail.html">course detail</a></li>
 											</ul>
-										</li>
-										<li class="dropdown"><a href="#">Blog</a>
+										</li> -->
+										<li><a href="contact.html">Kerjasama</a></li>
+										<li class="dropdown"><a href="#">Informasi</a>
 											<ul>
-												<li><a href="blog.html">Our Blog</a></li>
-												<li><a href="blog-classic.html">Blog Classic</a></li>
-												<li><a href="news-detail.html">Blog Detail</a></li>
+												<li><a href="blog.html">Berita</a></li>
+												<li><a href="blog-classic.html">Artikel</a></li>
+												<li><a href="news-detail.html">Gallery</a></li>
 											</ul>
 										</li>
-										<li><a href="contact.html">Contact</a></li>
+										<li><a href="contact.html">Kontak</a></li>
 									</ul>
 								</div>
 							</nav>

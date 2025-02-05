@@ -271,7 +271,7 @@ class CodeIgniter
         /** @var \Config\Kint $config */
         $config = config(KintConfig::class);
 
-        Kint::$depth_limit         = $config->maxDepth;
+        // Kint::$depth_limit         = $config->maxDepth;
         Kint::$display_called_from = $config->displayCalledFrom;
         Kint::$expanded            = $config->expanded;
 
