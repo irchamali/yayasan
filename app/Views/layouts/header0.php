@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Al-Quran Business HTML-5 Template | Homepage 01</title>
+<title>Yayasan Sunan Gunung Jati | Home</title>
 <!-- Stylesheets -->
 <link href="<?= base_url(''); ?>assets/quran/css/bootstrap.css" rel="stylesheet">
 <link href="<?= base_url(''); ?>assets/quran/css/style.css" rel="stylesheet">
@@ -47,7 +47,7 @@
 						<div class="left-box d-flex align-items-center flex-wrap">
 							<!-- Info List -->
 							<ul class="header-top_list">
-								<li><span class="icon fa-solid fa-envelope fa-fw"></span>admin@ysgj.or.id</li>
+								<li><span class="icon fa-solid fa-envelope fa-fw"></span><?= $site['site_mail']; ?></li>
 								<li><span class="icon fa-solid fa-location-dot fa-fw"></span>Yayasan Sunan Gunung Jati</li>
 							</ul>
 							<!-- <div>Gunung Jati</div> -->
@@ -56,7 +56,7 @@
 						<ul class="header-top_list-two">
 							<!-- <li><span class="icon fa-regular fa-sun fa-fw"></span>Sunrise At: 5:15 AM</li> -->
 							<!-- <li><span class="icon fa-solid fa-moon fa-fw"></span>Sunset At: 4:50 PM</li> -->
-							<li><span class="icon fa-solid fa-phone fa-fw"></span>+62 000 000</li>
+							<li><span class="icon fa-solid fa-phone fa-fw"></span>+<?= $site['site_wa']; ?></li>	
 						</ul>
 					</div>
 				</div>
@@ -91,27 +91,30 @@
 										</li>
 										<li class="dropdown"><a href="#">Tentang</a>
 											<ul>
-												<li><a href="about.html">Visi Misi</a></li>
-												<li><a href="price.html">Nilai-nilai</a></li>
+												<li><a href="#">Visi Misi</a></li>
+												<li><a href="#">Nilai-nilai</a></li>
 												<li class="dropdown"><a href="#">Profil</a>
 													<ul>
-														<li><a href="events.html">Pengurus</a></li>
-														<li><a href="event-detail.html">Struktur Organisasi</a></li>
+														<li><a href="#">Sejarah</a></li>
+														<li><a href="#">Struktur Organisasi</a></li>
 													</ul>
 												</li>
 											</ul>
 										</li>
 										<li class="dropdown"><a href="#">Program</a>
 											<ul>
-												<li><a href="faq.html">Pendidikan</a></li>
-												<li><a href="register.html">Pemberdayaan</a></li>
-												<li><a href="not-found.html">Sosial dan Dakwah</a></li>
-												<!-- <li class="dropdown"><a href="#">scholars</a>
+												<li class="dropdown"><a href="#">Pendidikan</a>
 													<ul>
-														<li><a href="scholars.html">scholars</a></li>
-														<li><a href="scholar-detail.html">scholar detail</a></li>
+														<li><a href="#">TK</a></li>
+														<li><a href="#">SD</a></li>
+														<li><a href="#">SMP</a></li>
+														<li><a href="#">SMA</a></li>
+														<li><a href="#">PT</a></li>
+														<!-- <li><a href="#">Pusat Talenta</a></li> -->
 													</ul>
-												</li> -->
+												</li>
+												<li><a href="#">Pemberdayaan</a></li>
+												<li><a href="#">Sosial dan Dakwah</a></li>
 											</ul>
 										</li>
 										<!-- <li class="dropdown"><a href="#">service</a>
@@ -126,7 +129,7 @@
 												<li><a href="course-detail.html">course detail</a></li>
 											</ul>
 										</li> -->
-										<li><a href="contact.html">Kerjasama</a></li>
+										<li><a href="#">Kerjasama</a></li>
 										<li class="dropdown"><a href="#">Informasi</a>
 											<ul>
 												<li><a href="blog.html">Berita</a></li>
@@ -134,7 +137,7 @@
 												<li><a href="news-detail.html">Gallery</a></li>
 											</ul>
 										</li>
-										<li><a href="contact.html">Kontak</a></li>
+										<li><a href="#">Kontak</a></li>
 									</ul>
 								</div>
 							</nav>

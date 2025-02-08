@@ -14,14 +14,14 @@
 						<!-- Content Column -->
 						<div class="slider-one_content">
 							<div class="slider-one_content-inner">
-								<div class="slider-one_title">Largest Online Madrasah</div>
-								<h1 class="slider-one_heading">Islamic Online <br> Madrasah</h1>
-								<div class="slider-one_text">Islamic online madrasah is an ISO certified educational institution of international standards</div>
+								<div class="slider-one_title">Yayasan Sunan Gunung Jati</div>
+								<h1 class="slider-one_heading">Santri Mandiri <br> dengan Kolaborasi</h1>
+								<div class="slider-one_text">Mari menjadi bagian dari pesantren dalam pengembangan peradaban islam yang moderat.</div>
 								<div class="slider-one_button">
 									<a href="course-detail.html" class="theme-btn btn-style-two">
 										<span class="btn-wrap">
-											<span class="text-one">Find the course</span>
-											<span class="text-two">Find the course</span>
+											<span class="text-one">Read More</span>
+											<span class="text-two">Read More</span>
 										</span>
 									</a>
 								</div>
@@ -39,14 +39,14 @@
 						<!-- Content Column -->
 						<div class="slider-one_content">
 							<div class="slider-one_content-inner">
-								<div class="slider-one_title">Largest Madrasah</div>
-								<h1 class="slider-one_heading">Islamic <br> Madrasah</h1>
-								<div class="slider-one_text">Yayasan Sunan Gunung Jati</div>
+								<div class="slider-one_title">Yayasan Sunan Gunung Jati</div>
+								<h1 class="slider-one_heading">Muda Bertalenta <br> Tua Penuh Hikmah</h1>
+								<div class="slider-one_text">Mari menjadi bagian dari pesantren dalam pengembangan peradaban islam yang moderat.</div>
 								<div class="slider-one_button">
 									<a href="course-detail.html" class="theme-btn btn-style-two">
 										<span class="btn-wrap">
-											<span class="text-one">Find the course</span>
-											<span class="text-two">Find the course</span>
+											<span class="text-one">Read More</span>
+											<span class="text-two">Read More</span>
 										</span>
 									</a>
 								</div>
@@ -126,7 +126,7 @@
 							<p>There are many variations of passages of lorem ipsum available, but the majority have suffered business consulting</p>
 							<div class="welcome-one_learn">
 								<span class="welcome-one_learn-icon flaticon-mosque"></span>
-								Learn Online at Your <br> Own Pace
+								Yayasan Sunan <br> Gunung Jati
 							</div>
 						</div>
 						<p>We offer our students high-quality Arabic and Quran at affordable prices that meet their budget.</p>
@@ -334,14 +334,14 @@
 												<span class="fa-regular fa-star fa-fw"></span>
 												<span class="fa-regular fa-star fa-fw"></span>
 											</div>
-											<h4 class="testimonial-block_one-heading">Customers Review</h4>
+											<h4 class="testimonial-block_one-heading">YSGJ Review</h4>
 											<div class="testimonial-block_one-text">Honestly i don’t have enough good words to write about resala academy everyone in resala academy are very nice very calm they are also flexible about your schedules. i just want say</div>
 											<div class="testimonial-block_one-author">
 												<div class="author-image">
 													<img src="<?= base_url(''); ?>assets/quran/images/resource/author-1.png" alt="" />
 												</div>
-												Hafiz bin Usif
-												<span>Quran Teacher</span>
+												Muhammad Ahmad
+												<span>Ustadz</span>
 											</div>
 										</div>
 									</div>
@@ -359,39 +359,14 @@
 												<span class="fa-regular fa-star fa-fw"></span>
 												<span class="fa-regular fa-star fa-fw"></span>
 											</div>
-											<h4 class="testimonial-block_one-heading">Customers Review</h4>
+											<h4 class="testimonial-block_one-heading">YSGJ Review</h4>
 											<div class="testimonial-block_one-text">Honestly i don’t have enough good words to write about resala academy everyone in resala academy are very nice very calm they are also flexible about your schedules. i just want say</div>
 											<div class="testimonial-block_one-author">
 												<div class="author-image">
 													<img src="<?= base_url(''); ?>assets/quran/images/resource/author-1.png" alt="" />
 												</div>
-												Hafiz bin Usif
-												<span>Quran Teacher</span>
-											</div>
-										</div>
-									</div>
-								</div>
-
-								<!-- Slide -->
-								<div class="swiper-slide">
-									<!-- Testimonial Block One -->
-									<div class="testimonial-block_one">
-										<div class="testimonial-block_one-inner">
-											<div class="testimonial-block_one-rating">
-												<span class="fa-regular fa-star fa-fw"></span>
-												<span class="fa-regular fa-star fa-fw"></span>
-												<span class="fa-regular fa-star fa-fw"></span>
-												<span class="fa-regular fa-star fa-fw"></span>
-												<span class="fa-regular fa-star fa-fw"></span>
-											</div>
-											<h4 class="testimonial-block_one-heading">Customers Review</h4>
-											<div class="testimonial-block_one-text">Honestly i don’t have enough good words to write about resala academy everyone in resala academy are very nice very calm they are also flexible about your schedules. i just want say</div>
-											<div class="testimonial-block_one-author">
-												<div class="author-image">
-													<img src="<?= base_url(''); ?>assets/quran/images/resource/author-1.png" alt="" />
-												</div>
-												Hafiz bin Usif
-												<span>Quran Teacher</span>
+												Siti Aisyah
+												<span>Ustadza</span>
 											</div>
 										</div>
 									</div>
