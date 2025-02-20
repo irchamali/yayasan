@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Yayasan Sunan Gunung Jati | Home</title>
+<title>YSGJ - Yayasan Sunan Gunung Jati</title>
 <!-- Stylesheets -->
 <link href="<?= base_url(''); ?>assets/quran/css/bootstrap.css" rel="stylesheet">
 <link href="<?= base_url(''); ?>assets/quran/css/style.css" rel="stylesheet">
@@ -12,15 +12,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="<?= base_url(''); ?>assets/quran/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="<?= base_url(''); ?>assets/quran/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="<?= base_url(''); ?>assets/quran/images/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="<?= base_url(''); ?>assets/quran/images/favicon/favicon.ico" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 
 <body>
@@ -91,12 +89,12 @@
 										</li>
 										<li class="dropdown"><a href="#">Tentang</a>
 											<ul>
-												<li><a href="#">Visi Misi</a></li>
-												<li><a href="#">Nilai-nilai</a></li>
+												<li><a href="/vmts">Visi Misi</a></li>
+												<li><a href="/nilai2">Nilai-nilai</a></li>
 												<li class="dropdown"><a href="#">Profil</a>
 													<ul>
-														<li><a href="#">Sejarah</a></li>
-														<li><a href="#">Struktur Organisasi</a></li>
+														<li><a href="/sejarah">Sejarah</a></li>
+														<li><a href="/struktur">Struktur Organisasi</a></li>
 													</ul>
 												</li>
 											</ul>
@@ -105,39 +103,27 @@
 											<ul>
 												<li class="dropdown"><a href="#">Pendidikan</a>
 													<ul>
-														<li><a href="#">TK</a></li>
-														<li><a href="#">SD</a></li>
-														<li><a href="#">SMP</a></li>
-														<li><a href="#">SMA</a></li>
+														<li><a href="/tk">TK</a></li>
+														<li><a href="/sd">SD</a></li>
+														<li><a href="/smp">SMP</a></li>
+														<li><a href="/sma">SMA</a></li>
 														<li><a href="#">PT</a></li>
 														<!-- <li><a href="#">Pusat Talenta</a></li> -->
 													</ul>
 												</li>
-												<li><a href="#">Pemberdayaan</a></li>
-												<li><a href="#">Sosial dan Dakwah</a></li>
+												<li><a href="/pemberdayaan">Pemberdayaan</a></li>
+												<li><a href="/sosialdakwah">Sosial dan Dakwah</a></li>
 											</ul>
 										</li>
-										<!-- <li class="dropdown"><a href="#">service</a>
-											<ul>
-												<li><a href="services.html">Services</a></li>
-												<li><a href="service-detail.html">service detail</a></li>
-											</ul>
-										</li>
-										<li class="dropdown"><a href="#">courses</a>
-											<ul>
-												<li><a href="courses.html">courses</a></li>
-												<li><a href="course-detail.html">course detail</a></li>
-											</ul>
-										</li> -->
 										<li><a href="#">Kerjasama</a></li>
 										<li class="dropdown"><a href="#">Informasi</a>
 											<ul>
-												<li><a href="blog.html">Berita</a></li>
-												<li><a href="blog-classic.html">Artikel</a></li>
-												<li><a href="news-detail.html">Gallery</a></li>
+												<li><a href="/post">Berita</a></li>
+												<li><a href="#">Artikel</a></li>
+												<li><a href="#">Gallery</a></li>
 											</ul>
 										</li>
-										<li><a href="#">Kontak</a></li>
+										<li><a href="/kontak">Kontak</a></li>
 									</ul>
 								</div>
 							</nav>
@@ -150,19 +136,9 @@
 							<div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div>
 
 							<!-- User Box -->
-							<a class="user-box theme-btn" href="register.html">
+							<a class="user-box theme-btn" href="/login">
 								<span class="fa-regular fa-user fa-fw"></span>
 							</a>
-
-							<!-- Button Box -->
-							<!-- <div class="header_button-box">
-								<a href="contact.html" class="theme-btn btn-style-one">
-									<span class="btn-wrap">
-										<span class="text-one">Quick Join Now</span>
-										<span class="text-two">Quick Join Now</span>
-									</span>
-								</a>
-							</div> -->
 
 							<!-- Mobile Navigation Toggler -->
 							<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>

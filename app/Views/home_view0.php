@@ -107,50 +107,7 @@
 	<section class="welcome-one">
 		<div class="welcome-one_pattern" style="background-image:url(<?= base_url(''); ?>assets/quran/images/background/pattern-1.png)"></div>
 		<div class="welcome-one_pattern-two" style="background-image:url(<?= base_url(''); ?>assets/quran/images/background/pattern-2.png)"></div>
-		<div class="auto-container">
-			<div class="row clearfix">
-
-				<!-- Content Column -->
-				<div class="welcome-one_content-column col-lg-6 col-md-12 col-sm-12">
-					<div class="welcome-one_content-outer">
-						<!-- Sec Title -->
-						<div class="sec-title">
-							<div class="sec-title_title d-flex align-items-center">Islamic Madrasah <span><img src="<?= base_url(''); ?>assets/quran/images/icons/bismillah-2.png" alt="" /></span></div>
-							<h2 class="sec-title_heading">Selamat Datang</h2>
-							<div class="sec-title_text">We welcome our users to Online Quran teaching services where we are offering multiple Islamic as well as character building and life reformation courses as per the teachings of Sharia.</div>
-						</div>
-						<div class="welcome-one_content">
-							<div class="welcome-one_content-image">
-								<img src="<?= base_url(''); ?>assets/quran/images/resource/welcome.jpg" alt="" />
-							</div>
-							<p>There are many variations of passages of lorem ipsum available, but the majority have suffered business consulting</p>
-							<div class="welcome-one_learn">
-								<span class="welcome-one_learn-icon flaticon-mosque"></span>
-								Yayasan Sunan <br> Gunung Jati
-							</div>
-						</div>
-						<p>We offer our students high-quality Arabic and Quran at affordable prices that meet their budget.</p>
-					</div>
-				</div>
-
-				<!-- Image Column -->
-				<div class="welcome-one_image-column col-lg-6 col-md-12 col-sm-12">
-					<div class="welcome-one_image-outer">
-						<div class="welcome-one_ameen">
-							<img src="<?= base_url(''); ?>assets/quran/images/icons/ameen-1.png" alt="" />
-						</div>
-						<div class="welcome-one_image">
-							<img src="<?= base_url(''); ?>assets/quran/images/resource/welcome-1.jpg" alt="" />
-						</div>
-						<div class="welcome-one_years d-flex align-items-center flex-wrap">
-							<span class="fa-solid fa-globe fa-fw"></span>
-							Since 1995 Operating in the world
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
+		
 	</section>
 	<!-- End Welcome One -->
 
@@ -166,8 +123,8 @@
 						<div class="students-one_title-outer">
 							<!-- Title Box -->
 							<div class="students-one_title-box">
-								<h3 class="students-one_title">Alhamdulillah we have reached over</h3>
-								<div class="students-one_text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+								<h3 class="students-one_title">Alhamdulillah.. Selamat Datang</h3>
+								<div class="students-one_text">Dengan senang hati kami menyambut akhi ukhti di Yayasan Sunan Gunung Jati.</div>
 							</div>
 							<!-- Counter Two -->
 							<div class="students-one_counter">
@@ -195,9 +152,12 @@
 											<span class="fa-regular fa-star fa-fw"></span>
 											<span class="fa-regular fa-star fa-fw"></span>
 										</div>
-										4.5
+										<div class="top-rated_stars">
+											<span class="fa-regular fa-star fa-fw"></span>
+											<span class="fa-regular fa-star fa-fw"></span>
+										</div>
 									</div>
-									<h4 class="top-rated_heading">Top Ratings on Trustpilot</h4>
+									<h4 class="top-rated_heading">Pendidikan</h4>
 									<div class="top-rated_text">Lorem ipsum generators on the internet tend to repeat predefined chunks necessary on making this the first velit esse cillum dolore</div>
 								</div>
 							</div>
@@ -206,9 +166,10 @@
 							<div class="passout">
 								<div class="passout_inner">
 									<div class="passout-number">
-										22k
+									<span class="fa-regular fa-moon fa-fw"></span>
+									<!-- <span class="fa-regular fa-star fa-fw"></span> -->
 									</div>
-									<h4 class="passout_heading">pass out</h4>
+									<h4 class="passout_heading">Pemberdayaan</h4>
 									<div class="passout_text">Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt to labore et dolore pass out</div>
 								</div>
 							</div>
@@ -227,7 +188,7 @@
 		<div class="auto-container">
 			<div class="inner-container d-flex justify-content-between align-items-center flex-wrap">
 				<div class="cta-one_bg" style="background-image:url(<?= base_url(''); ?>assets/quran/images/background/cta-one_bg.png)"></div>
-				<h3 class="cta-one_heading">Do not let Shaitan delay you from starting <br> to learn your deen.</h3>
+				<h3 class="cta-one_heading">Mari bergabung bersama kami <br> dengan senang hati!</h3>
 				<!-- Button Box -->
 				<div class="cta-one_button">
 					<a href="contact.html" class="theme-btn btn-style-one">
@@ -247,8 +208,8 @@
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title centered">
-				<div class="sec-title_title">Why to Choose Us</div>
-				<h2 class="sec-title_heading">Why Choose Our Islamic <br> Institute</h2>
+				<div class="sec-title_title">YSGJ Goals</div>
+				<h2 class="sec-title_heading">Nilai-nilai <br> Kepesantrenan</h2>
 			</div>
 			<div class="row clearfix">
 

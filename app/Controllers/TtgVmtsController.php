@@ -24,6 +24,6 @@ class TtgVmtsController extends BaseController
             'title' => 'VMTS',
             'active' => 'Tentang'
         ];
-        return view('about/vmts_view', $data);
+        return view('about/visimisi_view', $data);
     }
 }

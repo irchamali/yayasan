@@ -7,7 +7,7 @@
 				<h3 class="cta-two_heading">Yayasan Asy-Syarifiyyah Sunan Gunung Jati <br> Mengajak Kamu Semua Bersedekah</h3>
 				<!-- Button Box -->
 				<div class="cta-two_button">
-					<a href="contact.html" class="theme-btn btn-style-three">
+					<a href="#" class="theme-btn btn-style-three">
 						<span class="btn-wrap">
 							<span class="text-one">get in touch</span>
 							<span class="text-two">get in touch</span>
@@ -43,27 +43,13 @@
 										</div>
 										<!-- Social Box -->
 										<div class="footer_socials">
-											<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-											<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-											<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-											<!-- <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a> -->
+											<a href="<?= $site['site_facebook']; ?>"><i class="fa-brands fa-facebook-f"></i></a>
+											<a href="<?= $site['site_twitter']; ?>"><i class="fa-brands fa-youtube"></i></a>
+											<a href="<?= $site['site_instagram']; ?>"><i class="fa-brands fa-instagram"></i></a>
+											
 										</div>
 									</div>
 								</div>
-
-								<!-- Footer Column -->
-								<!-- <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-									<div class="footer-widget links-widget">
-										<h4 class="footer-title">Main Links</h4>
-										<ul class="footer-list">
-											<li><a href="#">About us</a></li>
-											<li><a href="#">Scholars</a></li>
-											<li><a href="#">Courses</a></li>
-											<li><a href="#">Latest News</a></li>
-											<li><a href="#">Contact</a></li>
-										</ul>
-									</div>
-								</div> -->
 
 							</div>
 						</div>
@@ -77,11 +63,10 @@
 									<div class="footer-widget links-widget">
 										<h4 class="footer-title">Main Link</h4>
 										<ul class="footer-list">
-											<li><a href="#">Online Courses</a></li>
-											<li><a href="#">Audio Listening</a></li>
-											<li><a href="#">Sehri & Iftar</a></li>
-											<li><a href="#">Our Events</a></li>
-											<li><a href="#">Quran Hifz Classes</a></li>
+											<li><a href="#">Profil</a></li>
+											<li><a href="#">Pendidikan</a></li>
+											<li><a href="#">Pemberdayaan</a></li>
+											<li><a href="#">Sosial dan Dakwah</a></li>
 										</ul>
 									</div>
 								</div>
@@ -91,30 +76,13 @@
 									<div class="footer-widget links-widget">
 										<h4 class="footer-title">Other Link</h4>
 										<ul class="footer-list">
-											<li><a href="#">Online Courses</a></li>
-											<li><a href="#">Audio Listening</a></li>
-											<li><a href="#">Sehri & Iftar</a></li>
-											<li><a href="#">Our Events</a></li>
-											<li><a href="#">Quran Hifz Classes</a></li>
+											<li><a href="#">Kerjasama</a></li>
+											<li><a href="#">Rilis Berita</a></li>
+											<!-- <li><a href="#">Dokumentasi</a></li> -->
+											<li><a href="#">Kontak</a></li>
 										</ul>
 									</div>
 								</div>
-
-								<!-- Footer Column -->
-								<!-- <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-									<div class="footer-widget newsletter-widget">
-										<h4 class="footer-title">newsletter</h4>
-										<div class="footer-text">Waiting for your message is not your important time</div>
-										<div class="newsletter-box">
-											<form method="post" action="contact.html">
-												<div class="form-group">
-													<input type="email" name="search-field" value="" placeholder="email address" required>
-													<button type="submit" class="theme-btn fa-regular fa-paper-plane fa-fw"></button>
-												</div>
-											</form>
-										</div>
-									</div>
-								</div> -->
 
 							</div>
 						</div>
@@ -123,18 +91,7 @@
 				</div>
 			</div>
 		</div>
-		<!-- <div class="footer-bottom">
-			<div class="footer_bottom-bg" style="background-image: url(assets/images/background/footer-bg_2.jpg)"></div>
-			<div class="auto-container">
-				<div class="d-flex justify-content-between align-items-center flex-wrap">
-					<div class="copyright">All rights reserved 2023 &copy; template_mr</div>
-					<ul class="footer-nav">
-						<li><a href="#">Terms of use</a></li>
-						<li><a href="#">Privacy Policy</a></li>
-					</ul>
-				</div>
-			</div>
-		</div> -->
+		
 	</footer>
 	<!-- End Footer Style -->
 

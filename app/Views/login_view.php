@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="<?= base_url(''); ?>assets/quran/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="<?= base_url(''); ?>assets/quran/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="<?= base_url(''); ?>assets/quran/images/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="<?= base_url(''); ?>assets/quran/images/favicon/favicon.ico" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,14 +34,14 @@
 	<!-- End Preloader -->
 
 	<!-- Register One -->
-	<section class="register-one">
+	<section class="register-one" style="background-image:url(<?= base_url(''); ?>assets/quran/images/icons/stars.png)">
 		<div class="auto-container">
 			<h3>Welcome to YSGJ👋</h3>
 			<div class="row clearfix text-center">
 
 				<!-- Column -->
-				<div class="register-one_column col-lg-6 col-md-12 col-sm-12">
-					<h4>Login</h4>
+				<div class="auto-container register-one_column col-lg-6 col-md-12 col-sm-12">
+					<h4><a href="/">Home</a> > Login</h4>
 					<?php if (session()->getFlashData('pesan')) : ?>
                         <div class="alert alert-warning" role="alert">
                         <?= session()->getFlashData('pesan') ?>
