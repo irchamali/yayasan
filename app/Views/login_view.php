@@ -1,128 +1,118 @@
 <!DOCTYPE html>
-<html lang="en-US" dir="ltr">
+<html>
+<head>
+<meta charset="utf-8">
+<title>LOGIN | YSGJ</title>
+<!-- Stylesheets -->
+<link href="<?= base_url(''); ?>assets/quran/css/bootstrap.css" rel="stylesheet">
+<link href="<?= base_url(''); ?>assets/quran/css/style.css" rel="stylesheet">
+<link href="<?= base_url(''); ?>assets/quran/css/responsive.css" rel="stylesheet">
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- ===============================================-->
-    <!--    Document Title-->
-    <!-- ===============================================-->
-    <title>Login</title>
+<link rel="shortcut icon" href="<?= base_url(''); ?>assets/quran/images/favicon.png" type="image/x-icon">
+<link rel="icon" href="<?= base_url(''); ?>assets/quran/images/favicon.png" type="image/x-icon">
 
-    <!-- ===============================================-->
-    <!--    Favicons-->
-    <!-- ===============================================-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/elixir/assets/img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/elixir/assets/img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/elixir/assets/img/favicons/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/x-icon" href="/assets/elixir/assets/img/favicons/favicon.ico">
-    <link rel="manifest" href="/assets/elixir/assets/img/favicons/manifest.json">
-    <meta name="msapplication-TileImage" content="/assets/elixir/assets/img/favicons/mstile-150x150.png">
-    <meta name="theme-color" content="#ffffff">
-    <script src="/assets/elixir/vendors/overlayscrollbars/OverlayScrollbars.min.js"></script>
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-    <!-- ===============================================-->
-    <!--    Stylesheets-->
-    <!-- ===============================================-->
-    <link href="/assets/elixir/vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="/assets/elixir/vendors/hamburgers/hamburgers.min.css" rel="stylesheet">
-    <link href="/assets/elixir/vendors/loaders.css/loaders.min.css" rel="stylesheet">
-    <link href="/assets/elixir/assets/css/theme.css" rel="stylesheet" />
-    <link href="/assets/elixir/assets/css/user.css" rel="stylesheet" />
+</head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&amp;family=Open+Sans:wght@300;400;600;700;800&amp;display=swap" rel="stylesheet">
-  </head>
+<body>
 
+<div class="page-wrapper">
+	
+	<!-- Cursor -->
+	<div class="cursor"></div>
+	<div class="cursor-follower"></div>
+	<!-- Cursor End -->
+ 	
+	<!-- Preloader -->
+    <div class="preloader"></div>
+	<!-- End Preloader -->
 
-  <body>
+	<!-- Register One -->
+	<section class="register-one">
+		<div class="auto-container">
+			<h3>Welcome to YSGJ👋</h3>
+			<div class="row clearfix text-center">
 
-    <main class="main" id="top">
-      <div class="preloader" id="preloader">
-        <div class="loader">
-          <div class="line-scale">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
-
-
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section class="text-center py-0">
-
-        <div class="bg-holder overlay overlay-2" style="background-image:url(/assets/backend/images/slider/login.jpg);">
-        </div>
-        <!--/.bg-holder-->
-
-        <div class="container">
-          <div class="row min-vh-100 align-items-center">
-            <div class="col-md-8 col-lg-5 mx-auto" data-zanim-timeline="{}" data-zanim-trigger="scroll">
-              <!-- <div class="mb-5" data-zanim-xs='{"delay":0,"duration":1}'><a href="/"><img src="" alt="logo" /></a></div> -->
-              <div class="card" data-zanim-xs='{"delay":0.1,"duration":1}'>
-                <div class="card-body p-md-5">
-                  <h4 class="text-uppercase fs-0 fs-md-1">login here</h4>
-                    <?php if (session()->getFlashData('pesan')) : ?>
+				<!-- Column -->
+				<div class="register-one_column col-lg-6 col-md-12 col-sm-12">
+					<h4>Login</h4>
+					<?php if (session()->getFlashData('pesan')) : ?>
                         <div class="alert alert-warning" role="alert">
                         <?= session()->getFlashData('pesan') ?>
                         </div>
                     <?php endif; ?>
-                  <form class="text-start mt-4" action="/login/validasi" method="post">
-                    <div class="row align-items-center">
-                      <div class="col-12">
-                        <div class="input-group">
-                          <div class="input-group-text bg-100"><span class="far fa-user"></span></div>
-                          <input class="form-control" type="email" placeholder="Email or username" name="email" aria-label="Text input with dropdown button" required autofocus />
-                        </div>
-                      </div>
-                      <div class="col-12 mt-2 mt-sm-4">
-                        <div class="input-group">
-                          <div class="input-group-text bg-100"><span class="fas fa-lock"></span></div>
-                          <input class="form-control" type="password" placeholder="Password" name="password" aria-label="Text input with dropdown button" required />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row align-items-center mt-3">
-                      <div class="col-6 mt-2 mt-sm-3">
-                        <button class="btn btn-primary w-100" type="submit">Login</button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end of .container-->
+					<div class="register-one_column-outer">
+						<!-- Login Form -->
+						<div class="styled-form">
+							
+							<form action="/login/validasi" method="post">
+								<div class="form-group">
+									<input type="email" name="email" value="" placeholder="Username or email*" required>
+								</div>
+								<div class="form-group">
+									<input type="password" name="password" value="" placeholder="Password*" required>
+								</div>
+								<div class="form-group">
+									
+								</div>
+								<div class="form-group d-flex align-items-center flex-wrap">
+									<button class="theme-btn btn-style-one">
+										<span class="btn-wrap">
+											<span class="text-one" type="submit">Login</span>
+											<span class="text-two" type="submit">Login</span>
+										</span>
+									</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
 
-      </section>
-      <!-- <section> close ============================-->
-      <!-- ============================================-->
-    </main>
+			</div>
+		</div>
+	</section>
+	<!-- End Register One -->
+	
+</div>
+<!-- End PageWrapper -->
 
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
-    <script src="/assets/elixir/vendors/popper/popper.min.js"></script>
-    <script src="/assets/elixir/vendors/bootstrap/bootstrap.min.js"></script>
-    <script src="/assets/elixir/vendors/is/is.min.js"></script>
-    <script src="/assets/elixir/vendors/bigpicture/BigPicture.js"> </script>
-    <script src="/assets/elixir/vendors/countup/countUp.umd.js"> </script>
-    <script src="/assets/elixir/vendors/swiper/swiper-bundle.min.js"></script>
-    <script src="/assets/elixir/vendors/fontawesome/all.min.js"></script>
-    <script src="/assets/elixir/vendors/lodash/lodash.min.js"></script>
-    <script src="/assets/elixir/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <script src="/assets/elixir/vendors/gsap/gsap.js"></script>
-    <script src="/assets/elixir/vendors/gsap/customEase.js"></script>
-    <script src="/assets/elixir/assets/js/theme.js"></script>
+<div class="progress-wrap">
+	<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+	</svg>
+</div>
 
-  </body>
+<script src="<?= base_url(''); ?>assets/quran/js/jquery.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/popper.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/bootstrap.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/appear.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/parallax.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/tilt.jquery.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/jquery.paroller.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/wow.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/jarallax.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/swiper.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/backtotop.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/odometer.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/parallax-scroll.js"></script>
 
+<script src="<?= base_url(''); ?>assets/quran/js/gsap.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/SplitText.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/ScrollTrigger.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/ScrollToPlugin.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/ScrollSmoother.min.js"></script>
+
+<script src="<?= base_url(''); ?>assets/quran/js/magnific-popup.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/nav-tool.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/jquery-ui.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/element-in-view.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/script.js"></script>
+
+</body>
 </html>
