@@ -69,8 +69,9 @@ $routes->get('publikasidosen/(:segment)', 'CategoryPudosController::index/$1');
 $routes->get('publikasimahasiswa/(:segment)', 'CategoryLapController::index/$1');
 
 // AboutController
-$routes->get('sejarah', 'TtgSejarahController::index');
 $routes->get('vmts', 'TtgVmtsController::index');
+$routes->get('nilai2', 'TtgNilai2Controller::index');
+$routes->get('sejarah', 'TtgSejarahController::index');
 $routes->get('renstra', 'TtgRenstraController::index');
 $routes->get('pengelola', 'TtgPengelolaController::index');
 
