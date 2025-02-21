@@ -21,7 +21,7 @@
 
 	<!-- Footer Style -->
 	<footer class="main-footer">
-		<div class="footer_bg-image" style="background-image: url(assets/quran/images/background/footer-bg.jpg)"></div>
+		<div class="footer_bg-image" style="background-image: url(<?= base_url(''); ?>assets/quran/images/background/footer-bg.jpg)"></div>
 		<div class="auto-container">
 			<div class="inner-container">
 				<!-- Widgets Section -->

@@ -1,98 +1,110 @@
 <?= $this->extend('layouts/template-post'); ?>
 <?= $this->section('content'); ?>
+    <!-- Sidebar Page Container -->
+    <div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+				
+				<!-- Content Side -->
+                <div class="content-side col-lg-8 col-md-12 col-sm-12">
+					<div class="blog-detail">
+						<div class="blog-detail_outer">
+							<div class="blog-detail_image">
+								<img src="/assets/backend/images/post/<?= $post['post_image']; ?>" alt="" />
+							</div>
+							<div class="blog-detail_content">
+								<div class="d-flex align-items-center flex-wrap">
+									<!-- Author -->
+									<div class="blog-detail_author d-flex align-items-center">
+										<div class="image">
+                                            <i class="fa-solid fa-user fa-fw"></i>
+                                            <?= $post['user_name']; ?>
+										</div>
+									</div>
+									<!-- Post Meta -->
+									<ul class="blog-detail_meta">
+										<li><span class="icon fa-brands fa-rocketchat fa-fw"></span><?= $post['category_slug']; ?></li>
+										<li><span class="icon fa-solid fa-clock fa-fw"></span><time datetime="2020-01-01"><?= date('d M Y', strtotime($post['post_date'])); ?></time></li>
+									</ul>
+								</div>
+								<h3 class="blog-detail_heading"><?= $post['post_title']; ?></h3>
+								<p><?= $post['post_contents']; ?></p>
 
-            <!-- Blog Section Start -->
-            <div class="rs-inner-blog pt-120 pb-120 md-pt-80 md-pb-80">
-			    <div class="container">
-			        <div class="row">
-			            <div class="col-lg-8 md-mb-50">
-			                <div class="blog-details">
-			                    <div class="bs-img mb-35">
-			                        <a href="#"><img src="/assets/backend/images/post/<?= $post['post_image']; ?>" alt=""></a>
-			                    </div>
-			                    <div class="blog-full">
-			                        <ul class="single-post-meta">
-			                            <li>
-			                                <span class="p-date"><i class="fi fi-rr-calendar"></i> <time datetime="2020-01-01"><?= date('d M Y', strtotime($post['post_date'])); ?></time> </span>
-			                            </li> 
-			                            <li>
-			                                <span class="p-date"> <i class="fi fi-rr-user"></i> <?= $post['user_name']; ?> </span>
-			                            </li> 
-			                            <li class="Post-cate">
-			                                <div class="tag-line">
-			                                    <i class="fa fa-book"></i>
-			                                    <a href="/category/<?= $post['category_slug']; ?>"><?= $post['category_slug']; ?></a>
-			                                </div>
-			                            </li>
-			                            
-			                        </ul>
-			                        
-			                        <h3 class="title pb-24"><?= $post['post_title']; ?></h3>
-			                        <p>
-                                        <?= $post['post_contents']; ?>
-			                        </p>
-			                        
-			                        <div class="bs-info">
-                        				Tags: 
-                                        <?php foreach ($post_tags as $tag) : ?>
-                        				    <a href="/tag/<?= $tag; ?>"><?= $tag; ?></a>
-                        				<?php endforeach; ?>
-                        			</div>
-			                        
-			                    </div>
-			                </div>
-			            </div>
-			            <div class="col-lg-4 col-md-12 pl-25 md-pl-15">
-			                <div class="widget-area">
-			                    <div class="search-widget mb-50">
-			                        <div class="search-wrap">
-                                        <form action="/search" method="GET" class="mt-3">
-											<input type="search" placeholder="Search..." name="search_query" class="search-input" required>
-											<button type="submit" value="Search"><br><i class="flaticon-search"></i></button>
-                                        </form>
-			                        </div>
-			                    </div>
-			                    <div class="recent-posts mb-50">
-			                        <div class="widget-title">
-			                            <h3 class="title">Recent Posts</h3>
-			                        </div>
+								<!-- Post Share Options-->
+								<div class="post-share-options">
+									<div class="post-share-inner d-flex justify-content-between align-items-center flex-wrap">
+										<div class="tags"><span>Tags:</span>
+                                            <?php foreach ($post_tags as $tag) : ?>
+                                                <a href="/tag/<?= $tag; ?>"><?= $tag; ?></a>
+                                            <?php endforeach; ?>
+                                        </div>
+										<!-- <div class="social-box">
+											<span>Share post :</span>
+											<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+											<a href="#"><i class="fa-brands fa-instagram"></i></a>
+											<a href="#"><i class="fa-brands fa-twitter"></i></a>
+										</div> -->
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Sidebar Side -->
+                <div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+                	<aside class="sidebar">
+
+						<!-- Sidebar Widget -->
+						<div class="sidebar-widget search-box">
+							<form method="GET" action="/search">
+								<div class="form-group">
+									<input type="search" name="search_query" value="" placeholder="Search using keyword" required>
+									<button type="submit"><span class="icon fa fa-search"></span></button>
+								</div>
+							</form>
+						</div>
+
+						<!-- Post Widget -->
+						<div class="sidebar-widget style-two post-widget">
+							<div class="widget-content">
+								<!-- Sidebar Title -->
+								<div class="sidebar-title">
+									<h4>Related Posts</h4>
+								</div>
+								<div class="content">
+									<!-- Post -->
                                     <?php foreach ($related_post as $row) : ?>
-			                        <div class="recent-post-widget no-border">
-			                            <div class="post-img">
-			                                <a href="/post/<?= $row['post_slug']; ?>"><img src="/assets/backend/images/post/<?= $row['post_image']; ?>" alt=""></a>
-			                            </div>
-			                            <div class="post-desc">
-			                                <a href="/post/<?= $row['post_slug']; ?>"><?= $row['post_title']; ?></a>
-			                                <span class="date-post"> <i class="fi fi-rr-calendar"></i><time datetime="2020-01-01"><?= date('d M Y', strtotime($row['post_date'])); ?></time></span>
-			                            </div>
-			                        </div>
-			                        <?php endforeach; ?>
-			                    </div>
-			                    <div class="categories mb-50">
-                                    <div class="widget-title mb-15">
-                                        <h3 class="title">Categories</h3>
-                                    </div>
-                                    <ul>
-                                        <?php foreach ($categories as $categ) : ?>
-                                            <li><a href="#"><?= $categ['category_name']; ?></a></li>
-                                        <?php endforeach; ?>
-                                    </ul>
-                                </div>
-			                    <div class="tags-cloud">
-			                        <div class="widget-title pb-23">
-			                            <h3 class="title">Tags</h3>
-			                        </div>
-			                        <div class="tagcloud">
-                                        <?php foreach ($tags as $tag) : ?>
-                                            <a href="/tag/<?= $tag['tag_name']; ?>" rel="tag"><?= $tag['tag_name']; ?></a>
-                                        <?php endforeach; ?>
-			                        </div>
-			                    </div>
-			                </div>
-			            </div>
-			        </div> 
-			    </div>
-			</div>
-			<!-- Blog Section End -->
+									<div class="post">
+										<div class="thumb"><a href="/post/<?= $row['post_slug']; ?>"><img src="/assets/backend/images/post/<?= $row['post_image']; ?>" alt=""></a></div>
+										<div class="post-date"><time datetime="2020-01-01"><?= date('d M Y', strtotime($row['post_date'])); ?></time></div>
+										<h6><a href="/post/<?= $row['post_slug']; ?>"><?= $row['post_title']; ?></a></h6>
+									</div>
+									<?php endforeach; ?>
+								</div>
+							</div>
+						</div>
 
+                        <!-- Categ Widget -->
+						<div class="sidebar-widget style-two popular-tags">
+							<div class="widget-content">
+								<!-- Sidebar Title -->
+								<div class="sidebar-title">
+									<h4>Post Categories</h4>
+								</div>
+								<div class="content">
+                                    <?php foreach ($categories as $categ) : ?>
+                                        <a href="/category/<?= $categ['category_name']; ?>" rel="tag"><?= $categ['category_name']; ?></a>
+                                    <?php endforeach; ?>
+								</div>
+							</div>
+						</div>
+
+					</aside>
+				</div>
+
+			</div>
+		</div>
+	</div>
 <?= $this->endSection(); ?>

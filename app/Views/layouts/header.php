@@ -131,7 +131,9 @@
 										<li><a href="/kerjasama">Kerjasama</a></li>
 										<li class="dropdown"><a href="#">Informasi</a>
 											<ul>
-												<li><a href="<?= base_url(''); ?>/post">Berita</a></li>
+												<li><a href="<?= base_url(''); ?>post">Berita</a></li>
+												<li><a href="<?= base_url(''); ?>category/acara">Acara</a></li>
+												<li><a href="<?= base_url(''); ?>category/pengumuman">Pengumuman</a></li>
 												<li><a href="<?= base_url(''); ?>category/artikel">Artikel</a></li>
 												<li><a href="<?= base_url(''); ?>gallery">Gallery</a></li>
 											</ul>

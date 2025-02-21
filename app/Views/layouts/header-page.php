@@ -3,6 +3,19 @@
 <head>
 <meta charset="utf-8">
 <title><?= $title; ?> | Yayasan Sunan Gunung Jati</title>
+<meta name="description" content="Yayasan Sunan Gunung Jati">
+<!-- SEO Tag -->
+<link rel="canonical" href="<?= site_url(); ?>">
+<meta property="og:locale" content="id_ID">
+<meta property="og:type" content="website">
+<meta property="og:title" content="<?= $title; ?> | <?= $site['site_name']; ?>">
+<meta property="og:description" content="<?= $site['site_description']; ?>">
+<meta property="og:url" content="<?= site_url(); ?>">
+<meta property="og:site_name" content="<?= $site['site_name']; ?>">
+<meta property="og:image" content="<?= base_url(''); ?>assets/backend/images/site/<?= $site['site_logo_big']; ?>">
+<meta property="og:image:secure_url" content="<?= base_url(''); ?>assets/backend/images/site/<?= $site['site_logo_big']; ?>">
+<meta property="og:image:width" content="560">
+<meta property="og:image:height" content="315">
 <!-- Stylesheets -->
 <link href="<?= base_url(''); ?>assets/quran/css/bootstrap.css" rel="stylesheet">
 <link href="<?= base_url(''); ?>assets/quran/css/style.css" rel="stylesheet">
@@ -118,7 +131,9 @@
 										<li><a href="/kerjasama">Kerjasama</a></li>
 										<li class="dropdown"><a href="#">Informasi</a>
 											<ul>
-												<li><a href="<?= base_url(''); ?>/post">Berita</a></li>
+												<li><a href="<?= base_url(''); ?>post">Berita</a></li>
+												<li><a href="<?= base_url(''); ?>category/acara">Acara</a></li>
+												<li><a href="<?= base_url(''); ?>category/pengumuman">Pengumuman</a></li>
 												<li><a href="<?= base_url(''); ?>category/artikel">Artikel</a></li>
 												<li><a href="<?= base_url(''); ?>gallery">Gallery</a></li>
 											</ul>
