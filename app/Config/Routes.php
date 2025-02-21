@@ -98,7 +98,7 @@ $routes->get('dokumen/(:segment)', 'CategoryDocsController::index/$1');
 $routes->get('laporan', 'LaporanController::index');
 
 // ContactController
-$routes->get('contact', 'ContactController::index');
+$routes->get('kontak', 'ContactController::index');
 $routes->post('contact', 'ContactController::inbox');
 
 // PengaduanController
