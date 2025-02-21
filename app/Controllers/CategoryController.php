@@ -30,7 +30,7 @@ class CategoryController extends BaseController
             $keyword = "Category '$slug' tidak ditemukan";
         } else {
             $posts = $posts->getResultArray();
-            $keyword = "Category: $slug ";
+            $keyword = "$slug ";
         }
         $data = [
             'site' => $this->siteModel->find(1),

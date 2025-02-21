@@ -1,66 +1,38 @@
 <?= $this->extend('layouts/template-page'); ?>
-<?= $this->section('content'); ?>            
-            
-        <!-- Blog Section Start -->
-			<div class="rs-inner-blog pt-120 pb-120 md-pt-80 md-pb-80">
-			    <div class="container">
-                    <div class="sec-title text-center mb-50">
-			         	<span class="sub-text">FH UNUSIA</span>
-			         	<h2 class="title">
-                            <?= $keyword; ?> 
-			         	</h2>
-			        </div>
-			        <div class="row">
-			            <div class="col-lg-12 col-md-6 md-mb-50">
-			                <div class="row">
-                                <?php foreach ($posts as $post) : ?>
-			                    <div class="col-lg-4 mb-50">
-			                        <div class="blog-item">
-			                            <div class="blog-img">
-			                                <a href="/post/<?= $post['post_slug']; ?>"><img src="<?= base_url(''); ?>/assets/backend/images/post/<?= $post['post_image']; ?>" alt=""></a>
-			                                <ul class="post-categories">
-                                                <li><a href="#"><?= $post['category_name']; ?></a></li>
-                                            </ul>
-			                            </div>
-			                            <div class="blog-content">
-			                                <h3 class="blog-title"><a href="/post/<?= $post['post_slug']; ?>"><?= $post['post_title']; ?></a></h3>
-			                                <div class="blog-meta">
-			                                    <ul class="btm-cate">
-			                                        <li>
-			                                            <div class="blog-date">
-			                                                <i class="fi fi-rr-calendar"></i> <time datetime="2022-01-01"><?= date('d M Y', strtotime($post['post_date'])); ?></time> 
-			                                            </div>
-			                                        </li> 
-			                                        <li>
-			                                            <div class="gudevsdesign">
-			                                            	<i class="fi fi-rr-user"></i> <?= $post['user_name']; ?> 
-			                                            </div>
-			                                        </li> 
-			                                    </ul>
-			                                </div>
-			                                <!-- <div class="blog-desc">   
-			                                    We denounce with righteous indige nation and dislike men who are so beguiled    
-			                                </div> -->
-			                                <!-- <div class="blog-button blog-inner-btn">
-			                                    <a class="blog-btn" href="/post/<?= $post['post_slug']; ?>">Continue Reading</a>
-			                                </div> -->
-			                            </div>
-			                        </div>
-			                    </div>
-			                    <?php endforeach; ?>
-			                    <div class="col-lg-12 text-center pt-40">
-                                    <ul class="pagination-part">  
-                                        <!-- <li class="active"><a href="#">1</a></li>
-                                        <li><a href="#">2</a></li>
-                                        <li><a class="next-page" href="#">Next</a></li> -->
-                                    </ul> 
-                                </div>
-			                </div>
-			            </div>
-			            
-			        </div> 
-			    </div>
-			</div>
-		<!-- Blog Section End -->
+<?= $this->section('content'); ?>     
+<!-- Events One -->
+    <section class="events-one">
+		<div class="auto-container">
+        <h2 class="text-center">Category: <?= $keyword; ?></h2><br>
+			<div class="row clearfix">
+
+				<!-- Event Block One -->
+                <?php foreach ($posts as $post) : ?>
+				<div class="event-block_one col-lg-4 col-md-6 col-sm-12">
+					<div class="event-block_one-inner">
+						<div class="event-block_one-image">
+							<a href="/post/<?= $post['post_slug']; ?>"><img src="<?= base_url(''); ?>/assets/backend/images/post/<?= $post['post_image']; ?>" alt="Image of post" /></a>
+						</div>
+						<div class="event-block_one-content">
+                            <div class="event-block_one-time"><?= $keyword; ?></div>
+							<div class="event-block_one-location"><i class="fa-solid fa-user fa-fw"></i> <?= $post['user_name']; ?></div>
+							<h5 class="event-block_one-heading"><a href="/post/<?= $post['post_slug']; ?>"><?= $post['post_title']; ?></a></h5>
+							
+						</div>
+					</div>
+				</div>
+                <?php endforeach; ?>
+
+			<!-- Styled Pagination -->
+            <div class="col-lg-12 text-center pt-40">
+			<ul class="styled-pagination text-center">
+
+			</ul>
+            </div>
+			<!-- End Styled Pagination -->
+
+		</div>
+	</section>
+	<!-- End Events One -->
 
 <?= $this->endSection(); ?>
