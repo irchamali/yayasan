@@ -94,7 +94,7 @@
 												<li class="dropdown"><a href="#">Profil</a>
 													<ul>
 														<li><a href="/sejarah">Sejarah</a></li>
-														<li><a href="/struktur">Struktur Organisasi</a></li>
+														<li><a href="/pengelola">Struktur Organisasi</a></li>
 													</ul>
 												</li>
 											</ul>
@@ -115,12 +115,12 @@
 												<li><a href="/sosialdakwah">Sosial dan Dakwah</a></li>
 											</ul>
 										</li>
-										<li><a href="#">Kerjasama</a></li>
+										<li><a href="/kerjasama">Kerjasama</a></li>
 										<li class="dropdown"><a href="#">Informasi</a>
 											<ul>
-												<li><a href="/post">Berita</a></li>
-												<li><a href="#">Artikel</a></li>
-												<li><a href="#">Gallery</a></li>
+												<li><a href="<?= base_url(''); ?>/post">Berita</a></li>
+												<li><a href="<?= base_url(''); ?>category/artikel">Artikel</a></li>
+												<li><a href="<?= base_url(''); ?>gallery">Gallery</a></li>
 											</ul>
 										</li>
 										<li><a href="/kontak">Kontak</a></li>
