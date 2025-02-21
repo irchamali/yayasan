@@ -1,3 +1,3 @@
-<?= $this->include('layouts/header0'); ?>
+<?= $this->include('layouts/header'); ?>
 <?= $this->renderSection('content'); ?>
-<?= $this->include('layouts/footer0'); ?>
+<?= $this->include('layouts/footer'); ?>

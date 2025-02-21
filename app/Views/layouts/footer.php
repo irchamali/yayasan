@@ -1,120 +1,146 @@
-    </div> 
-		<!-- Main content End -->
-	 
-		<!-- Footer Start -->
-		<footer id="rs-footer" class="rs-footer footer-main-home">
-			<div class="footer-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-6 md-mb-20">
-							<h3 class="footer-title">Tentang</h3>
-							<div class="textwidget mb-33">
-								Fakultas Hukum Universitas Nahdlatul Ulama Indonesia bertekad untuk membentuk generasi pemimpin, entrepreneur dan pemikir kosmopolit masa depan dalam bidang Hukum.
-							</div>
-							<ul class="footer-social md-mb-30">  
-                                <li><a href="<?= $site['site_facebook']; ?>"><i class="fab fa-facebook-f"></i></a></li>                     
-                                <li><a href="<?= $site['site_twitter']; ?>"><i class="fa-brands fa-tiktok"></i></a></li>                     
-                                <li><a href="<?= $site['site_instagram']; ?>"><i class="fab fa-instagram"></i></a></li>                      
-                                <!-- <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>                      -->
-                          	</ul>
-						</div>
-						<div class="col-lg-3 pl-76 md-pl-15 md-mb-10">
-							<h3 class="footer-title">Kontak</h3>
-							<ul class="address-widget">
-                                <li>
-                                    <i class="fi fi-rr-phone-call"></i>
-                                    <div class="desc">
-                                       <a href="https://wa.me/<?= $site['site_wa']; ?>"><?= $site['site_wa']; ?></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <i class="fi fi-rr-envelope-plus"></i>
-                                    <div class="desc">
-                                        <a href="mailto:<?= $site['site_mail']; ?>"><?= $site['site_mail']; ?></a>
-                                    </div>
-                                </li>
-                            </ul>
-						</div>
-						<div class="col-lg-3 pl-75 md-pl-15 md-mb-10">
-							<h3 class="footer-title">Program Studi</h3>
-							<ul class="site-map">
-                                <li><a href="https://unusia.ac.id/prodi/S1ilmuhukum">S1 Ilmu Hukum</a></li>
-                                <li><a href="https://unusia.ac.id/prodi/S1hukumkeluarga">S1 Hukum Keluarga</a></li>
-                            </ul>
-						</div>
+	<!-- CTA One -->
+	<section class="cta-two">
+		<div class="auto-container">
+			<div class="inner-container d-flex justify-content-between align-items-center flex-wrap">
+				<div class="cta-two_bg" style="background-image:url(assets/quran/images/background/cta-one_bg.png)"></div>
+				<div class="cta-two_icon flaticon-nabawi-mosque"></div>
+				<h3 class="cta-two_heading">Yayasan Asy-Syarifiyyah Sunan Gunung Jati <br> Mengajak Kamu Semua Bersedekah</h3>
+				<!-- Button Box -->
+				<div class="cta-two_button">
+					<a href="<?= $site['site_linkedin']; ?>" class="theme-btn btn-style-three">
+						<span class="btn-wrap">
+							<span class="text-one">get in touch</span>
+							<span class="text-two">get in touch</span>
+						</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End CTA One -->
+
+	<!-- Footer Style -->
+	<footer class="main-footer">
+		<div class="footer_bg-image" style="background-image: url(assets/quran/images/background/footer-bg.jpg)"></div>
+		<div class="auto-container">
+			<div class="inner-container">
+				<!-- Widgets Section -->
+				<div class="widgets-section">
+					<div class="row clearfix">
 						
-					</div>
-				</div>
-			</div>
-			<div class="footer-bottom">
-                <div class="container">                    
-                    <div class="row y-middle">
-                        <div class="col-lg-6">
-                            <div class="copyright text-lg-start text-center">
-                                <p>© 2024 Unusia <a href="/login" target="blank">Labs</a>.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-		</footer>
-		<!-- Footer End -->
+						<!-- Big Column -->
+						<div class="big-column col-lg-6 col-md-12 col-sm-12">
+							<div class="row clearfix">
 
-		<!-- start scrollUp  -->
-		<div id="scrollUp">
-			<i class="fa fa-angle-up"></i>
-		</div>
-		<!-- End scrollUp  -->
+								<!-- Footer Column -->
+								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+									<div class="footer-widget logo-widget">
+										<div class="footer-logo"><a href="#"><img src="<?= base_url(''); ?>assets/quran/images/ysgj-logo-white.png" alt="" title=""></a></div>
+										<!-- Footer List -->
+										<div class="footer_list">
+											<li>Yayasan Sunan Gunung Jati (YSGJ) merupakan yayasan pendidikan Islam yang menanamkan nilai-nilai kemandirian, inovasi dan kolaborasi.</li>
+										</div>
+										<!-- Social Box -->
+										<div class="footer_socials">
+											<a href="<?= $site['site_facebook']; ?>"><i class="fa-brands fa-facebook-f"></i></a>
+											<a href="<?= $site['site_twitter']; ?>"><i class="fa-brands fa-youtube"></i></a>
+											<a href="<?= $site['site_instagram']; ?>"><i class="fa-brands fa-instagram"></i></a>
+											
+										</div>
+									</div>
+								</div>
 
-
-		<!-- Search Modal Start -->
-		<div class="modal fade search-modal" id="searchModal" tabindex="-1">
-			<button type="button" class="close" data-bs-dismiss="modal">
-				<i class="fi fi-rr-cross-small"></i>
-			</button>
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="search-block clearfix">
-						<form>
-							<div class="form-group">
-								<input class="form-control" placeholder="Searching..." type="text">
-								<button type="submit" value="Search"><i class="fi fi-rr-search"></i></button>
 							</div>
-						</form>
+						</div>
+
+						<!-- Big Column -->
+						<div class="big-column col-lg-6 col-md-12 col-sm-12">
+							<div class="row clearfix">
+
+								<!-- Footer Column -->
+								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+									<div class="footer-widget links-widget">
+										<h4 class="footer-title">Main Link</h4>
+										<ul class="footer-list">
+											<li><a href="#">Profil</a></li>
+											<li><a href="#">Pendidikan</a></li>
+											<li><a href="#">Pemberdayaan</a></li>
+											<li><a href="#">Sosial dan Dakwah</a></li>
+										</ul>
+									</div>
+								</div>
+
+								<!-- Footer Column -->
+								<div class="footer-column col-lg-6 col-md-6 col-sm-12">
+									<div class="footer-widget links-widget">
+										<h4 class="footer-title">Other Link</h4>
+										<ul class="footer-list">
+											<li><a href="#">Kerjasama</a></li>
+											<li><a href="#">Rilis Berita</a></li>
+											<!-- <li><a href="#">Dokumentasi</a></li> -->
+											<li><a href="#">Kontak</a></li>
+										</ul>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- Search Modal End -->
+		
+	</footer>
+	<!-- End Footer Style -->
 
-		<!-- modernizr js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/modernizr-2.8.3.min.js"></script>
-		<!-- jquery latest version -->
-		<script src="<?= base_url(''); ?>assets/reno/js/jquery.min.js"></script>
-		<!-- Bootstrap v5.0.2 js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/bootstrap.min.js"></script>
-		<!-- op nav js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/jquery.nav.js"></script>
-		<!-- PageScroll2id onepage js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/jquery.malihu.PageScroll2id.min.js"></script>
-		<!-- owl.carousel js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/owl.carousel.min.js"></script>
-		<!-- Slick js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/slick.min.js"></script>
-		<!-- wow js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/wow.min.js"></script>
-		<!-- Skill bar js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/skill.bars.jquery.js"></script>
-		<!-- imagesloaded js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/imagesloaded.pkgd.min.js"></script>
-		<!-- odometer & appear js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/jquery.appear.min.js"></script>
-		<script src="<?= base_url(''); ?>assets/reno/js/odometer.min.js"></script>
-		<!-- magnific popup js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/jquery.magnific-popup.min.js"></script>
-		<!-- contact form js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/contact.form.js"></script>
-		<!-- main js -->
-		<script src="<?= base_url(''); ?>assets/reno/js/main.js"></script>
-	</body>
+	<!-- Search Popup -->
+	<div class="search-popup">
+		<div class="color-layer"></div>
+		<button class="close-search"><span class="flaticon-close-1"></span></button>
+		<form method="post" action="blog.html">
+			<div class="form-group">
+				<input type="search" name="search-field" value="" placeholder="Search Here" required="">
+				<button class="fa fa-solid fa-magnifying-glass fa-fw" type="submit"></button>
+			</div>
+		</form>
+	</div>
+	<!-- End Search Popup -->
+	
+</div>
+<!-- End PageWrapper -->
+
+<div class="progress-wrap">
+	<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+		<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+	</svg>
+</div>
+
+<script src="<?= base_url(''); ?>assets/quran/js/jquery.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/popper.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/bootstrap.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/appear.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/parallax.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/tilt.jquery.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/jquery.paroller.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/wow.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/jarallax.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/swiper.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/backtotop.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/odometer.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/parallax-scroll.js"></script>
+
+<script src="<?= base_url(''); ?>assets/quran/js/gsap.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/SplitText.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/ScrollTrigger.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/ScrollToPlugin.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/ScrollSmoother.min.js"></script>
+
+<script src="<?= base_url(''); ?>assets/quran/js/magnific-popup.min.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/nav-tool.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/jquery-ui.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/element-in-view.js"></script>
+<script src="<?= base_url(''); ?>assets/quran/js/script.js"></script>
+
+</body>
 </html>

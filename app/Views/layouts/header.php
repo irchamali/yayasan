@@ -1,460 +1,180 @@
 <!DOCTYPE html>
-<html lang="en"> 
-	<head>
-		<!-- meta tag -->
-		<meta charset="utf-8">
-		<title>Fakultas Hukum - Universitas Nahdlatul Ulama Indonesia</title>
-		<meta name="description" content="FH UNUSIA bertekad untuk membentuk generasi pemimpin, entrepreneur dan pemikir kosmopolit masa depan dalam bidang Hukum.">
-		<!-- SEO Tag -->
-		<link rel="canonical" href="<?= site_url(); ?>" />
-		<meta property="og:locale" content="id_ID" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="<?= $site['site_name']; ?>" />
-		<meta property="og:description" content="<?= $site['site_description']; ?>" />
-		<meta property="og:url" content="<?= site_url(); ?>" />
-		<meta property="og:site_name" content="<?= $site['site_name']; ?>" />
-		<meta property="og:image" content="<?= base_url(''); ?>assets/backend/images/site/<?= $site['site_logo_big']; ?>" />
-		<meta property="og:image:secure_url" content="<?= base_url(''); ?>assets/backend/images/site/<?= $site['site_logo_big']; ?>" />
-		<meta property="og:image:width" content="560" />
-		<meta property="og:image:height" content="315" />
-		<!-- responsive tag -->
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- favicon -->
-		<link rel="apple-touch-icon" href="apple-touch-icon.png">
-		<link rel="shortcut icon" type="image/x-icon" href="<?= base_url(''); ?>assets/reno/images/fav.png">
-		<!-- Bootstrap v5.0.2 css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/css/bootstrap.min.css">
-		<!-- font-awesome css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/fonts/font/font-awesome.min.css">
-		<!-- Uicons Regular Rounded css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/css/uicons-regular-rounded.css">
-		<!-- flaticon css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/fonts/flaticon.css">
-		<!-- animate css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/css/animate.css">
-		<!-- owl.carousel css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/css/owl.carousel.css">
-		<!-- slick slider css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/css/slick.css">
-		<!-- odometer css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/css/odometer.min.css">
-		<!-- off canvas css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/css/off-canvas.css">
-		<!-- magnific popup css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/css/magnific-popup.css">
-		<!-- Main Menu css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/css/rsmenu-main.css">
-		<!-- spacing css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/css/rs-spacing.css">
-		<!-- style css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/css/style.css"> <!-- This stylesheet dynamically changed from style.less -->
-		<!-- responsive css -->
-		<link rel="stylesheet" type="text/css" href="<?= base_url(''); ?>assets/reno/css/responsive.css">
-		
-	</head>
-	<body class="defult-home">
-		
-		<div class="offwrap"></div>
+<html>
+<head>
+<meta charset="utf-8">
+<title>YSGJ - Yayasan Sunan Gunung Jati</title>
+<!-- <meta name="description" content="YSGJ"> -->
+<!-- SEO Tag -->
+<link rel="canonical" href="<?= site_url(); ?>" />
+<meta property="og:locale" content="id_ID" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="<?= $site['site_name']; ?>" />
+<meta property="og:description" content="<?= $site['site_description']; ?>" />
+<meta property="og:url" content="<?= site_url(); ?>" />
+<meta property="og:site_name" content="<?= $site['site_name']; ?>" />
+<meta property="og:image" content="<?= base_url(''); ?>assets/backend/images/site/<?= $site['site_logo_big']; ?>" />
+<meta property="og:image:secure_url" content="<?= base_url(''); ?>assets/backend/images/site/<?= $site['site_logo_big']; ?>" />
+<meta property="og:image:width" content="560" />
+<meta property="og:image:height" content="315" />
+<!-- Stylesheets -->
+<link href="<?= base_url(''); ?>assets/quran/css/bootstrap.css" rel="stylesheet">
+<link href="<?= base_url(''); ?>assets/quran/css/style.css" rel="stylesheet">
+<link href="<?= base_url(''); ?>assets/quran/css/responsive.css" rel="stylesheet">
+<link href="<?= base_url(''); ?>assets/quran/css/font-awesome.css" rel="stylesheet">
 
-		<!--Preloader start here-->
-	   	<div id="pre-load">
-            <div id="loader" class="loader">
-                <div class="loader-container">
-                    <div class="loader-icon"><img src="<?= base_url(''); ?>assets/reno/images/fav.png" alt="Universitas Nahdlatul Ulama Indonesia "></div>
-                </div>
-            </div>              
-        </div>
-		<!--Preloader area end here-->
-			
-		<!-- Main content Start -->
-		<div class="main-content">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-			<!--Full width header Start-->
-			<div class="full-width-header">
-				<!--Header Start-->
-				<header id="rs-header" class="rs-header header-style1 header-style3">
-					<!-- Toolbar Area Start -->
-					<div class="toolbar-area topbar-style1 hidden-md">
-						<div class="container">
-							<div class="row rs-vertical-middle">
-							   <div class="col-lg-8">
-									<div class="toolbar-contact">
-										<ul class="rs-contact-info">                   
-											<li>
-					                            <i class="fi fi-rr-envelope-plus"></i>                  
-					                            <a href="mailto:<?= $site['site_mail']; ?>"><?= $site['site_mail']; ?></a>               
-					                        </li>
-	                                        <li>
-                                              	<i class="fi fi-rr-phone-call"></i>                                      
-                                                <a href="https://wa.me/<?= $site['site_wa']; ?>"> +<?= $site['site_wa']; ?></a>                   
-                                            </li>
-                                            <!-- <li>
-                                              	<i class="fi-rr-map-marker-home"></i>                                      
-                                                503 Ocala Street, Florida, USA              
-                                            </li> -->
-										</ul>
-									</div>
-								</div>
-								<div class="col-lg-4">
-									<div class="toolbar-sl-share">
-										<ul class="clearfix">
-											<li class="opening"> <em><i class="fi fi-rr-time-add"></i> Mon - Fri: 9.00 to 17.00</em> </li>
-											<li><a href="<?= $site['site_facebook']; ?>"><i class="fab fa-facebook-f"></i></a></li>                     
-											<li><a href="<?= $site['site_instagram']; ?>"><i class="fab fa-instagram"></i></a></li>   
-											<li><a href="<?= $site['site_twitter']; ?>"><i class="fa-brands fa-tiktok"></i></a></li>
-											<!-- <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>                  -->
-										</ul>
-									</div>
-								</div>
-							</div>
+<link rel="shortcut icon" href="<?= base_url(''); ?>assets/quran/images/favicon/favicon.ico" type="image/x-icon">
+<link rel="icon" href="<?= base_url(''); ?>assets/quran/images/favicon/favicon.ico" type="image/x-icon">
+
+<!-- Responsive -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+</head>
+
+<body>
+
+<div class="page-wrapper">
+	
+	<!-- Cursor -->
+	<div class="cursor"></div>
+	<div class="cursor-follower"></div>
+	<!-- Cursor End -->
+ 	
+	<!-- Preloader -->
+    <div class="preloader"></div>
+	<!-- End Preloader -->
+	
+	<!-- Main Header -->
+	<header class="main-header">
+		
+		<!-- Header Top -->
+		<div class="header-top">
+			<div class="auto-container">
+				<div class="inner-container">
+					<div class="d-flex justify-content-between align-items-center flex-wrap">
+						<div class="left-box d-flex align-items-center flex-wrap">
+							<!-- Info List -->
+							<ul class="header-top_list">
+								<li><span class="icon fa-solid fa-envelope fa-fw"></span><?= $site['site_mail']; ?></li>
+								<li><span class="icon fa-solid fa-location-dot fa-fw"></span>Yayasan Sunan Gunung Jati</li>
+							</ul>
+							<!-- <div>Gunung Jati</div> -->
+							<div class="bismillah"><img src="<?= base_url(''); ?>assets/quran/images/icons/bismillah.png" alt="" /> </div>
 						</div>
+						<ul class="header-top_list-two">
+							<!-- <li><span class="icon fa-regular fa-sun fa-fw"></span>Sunrise At: 5:15 AM</li> -->
+							<!-- <li><span class="icon fa-solid fa-moon fa-fw"></span>Sunset At: 4:50 PM</li> -->
+							<li><span class="icon fa-solid fa-phone fa-fw"></span>+<?= $site['site_wa']; ?></li>	
+						</ul>
 					</div>
-					<!-- Toolbar Area End -->
-					
-					<!-- Menu Start -->
-					<div class="menu-area menu-sticky">
-						<div class="container">
-							<div class="row-table">
-								<div class="col-cell header-logo">                                  
-								    <div class="logo-area">
-								        <a href="/">
-								            <img class="normal-logo" src="<?= base_url(''); ?>assets/reno/images/logo-dark.png" alt="logo">  
-								            <img class="sticky-logo" src="<?= base_url(''); ?>assets/reno/images/logo-dark.png" alt="logo">
-								        </a>
-								    </div>
-								</div>
-								<div class="col-cell">
-									<div class="rs-menu-area">
-										<div class="main-menu">
-											<nav class="rs-menu hidden-md">
-												<ul class="nav-menu">
-													<li>
-														<a href="/">Home</a>
-													</li>
-													<li class="menu-item-has-children">
-														<a href="#">Tentang</a>
-														<ul class="sub-menu">
-															<li><a href="<?= base_url(''); ?>sejarah">Sejarah</a></li>
-															<li><a href="<?= base_url(''); ?>vmts">Visi Misi</a></li>
-															<li><a href="<?= base_url(''); ?>renstra">Renstra</a></li>
-															<li><a href="<?= base_url(''); ?>pengelola">Pengelola</a></li>
-															<li><a href="https://lppmi.unusia.ac.id/akreditasi">Akreditasi</a></li>
-														</ul>
-													</li>
-													<li class="menu-item-has-children">
-														<a href="#">Program</a>
-														<ul class="sub-menu">
-															<li class="last-item menu-item-has-children">
-															    <a href="#">Program Studi <i class="fi fi-rr-plus-small"></i></a>
-															    <ul class="sub-menu">
-															        <li><a href="https://unusia.ac.id/prodi/s1ilmuhukum">S1 Ilmu Hukum</a></li>
-															        <li><a href="https://unusia.ac.id/prodi/s1hukumkeluarga">S1 Hukum Keluarga</a></li>
-															    </ul>
-															</li>
-															<li class="last-item menu-item-has-children">
-															    <a href="#">Dokumen Fakultas <i class="fi fi-rr-plus-small"></i></a>
-															    <ul class="sub-menu">
-															        <li><a href="<?= base_url(''); ?>dokumen">Semua dokumen</a></li>
-															        <li><a href="<?= base_url(''); ?>dokumen/peraturan">Peraturan</a></li>
-																	<li><a href="<?= base_url(''); ?>dokumen/keputusan">Keputusan</a></li>
-																	<li><a href="<?= base_url(''); ?>dokumen/panduan">Panduan</a></li>
-															    </ul>
-															</li>
-															<li><a href="<?= base_url(''); ?>riset">Penelitian</a></li>
-															<li><a href="<?= base_url(''); ?>pkm">Pengabdian Masyarakat</a></li>
-															<li><a href="<?= base_url(''); ?>upm">Penjaminan Mutu</a></li>
-														</ul>
-													</li>
-		
-													<li class="menu-item-has-children">
-														<a href="#">Dosen</a>
-														<ul class="sub-menu">
-															<li class="last-item menu-item-has-children">
-															    <a href="#">Data Dosen (dikti) <i class="fi fi-rr-plus-small"></i></a>
-															    <ul class="sub-menu">
-																<li><a href="https://pddikti.kemdikbud.go.id/detail-prodi/mlC7THBoT0TlQh2zFWkcXa-Jq0DQzt5J7jaRB0f3gBvP-uuD4XPJzmM3hDb0XPAXcQc_Ew==">S1 Ilmu Hukum</a></li>
-																<li><a href="https://pddikti.kemdikbud.go.id/detail-prodi/S0zFWLcrTQxt19oY1G1Fdnmp3u5wlKr98A94gXmkMo_i0uNBpogOlSFxySQIRIATf-bUxg==">S1 Hukum Keluarga</a></li>
-															</ul>
-															</li>
-															<!-- <li><a href="#">Data Dosen</a></li> -->
-															<li class="last-item menu-item-has-children">
-															    <a href="#">Data Dosen (sinta) <i class="fi fi-rr-plus-small"></i></a>
-															    <ul class="sub-menu">
-															        <li><a href="https://sinta.kemdikbud.go.id/departments/authors/8113/BE378CE8-6194-40A8-BEEF-13CBF2F98870/65A38807-09F4-406A-909D-2D3C5716F8DF">S1 Ilmu Hukum</a></li>
-															        <li><a href="https://sinta.kemdikbud.go.id/departments/authors/8113/BE378CE8-6194-40A8-BEEF-13CBF2F98870/856C29AA-4090-406D-B844-18175D3462D3">S1 Hukum Keluarga</a></li>
-															    </ul>
-															</li>
-															<li><a href="<?= base_url(''); ?>publikasidosen">Publikasi Dosen</a></li>
-														</ul>
-													</li>
-													<li class="menu-item-has-children">
-														<a href="#">Mahasiswa</a>                                                        
-														<ul class="sub-menu">  
-															<li><a href="https://pmb.unusia.ac.id/">Penerimaan Mahasiswa</a></li>
-															<li><a href="<?= base_url(''); ?>ormawa">Organisasi Mahasiswa</a></li>
-															<li><a href="<?= base_url(''); ?>publikasimahasiswa">Publikasi Mahasiswa</a></li>
-														</ul>
-													</li>
-													<li class="menu-item-has-children">
-														<a href="#">Alumni</a>
-														<ul class="sub-menu">  
-															<li><a href="#">Tracer Study</a></li>
-															<li><a href="<?= base_url(''); ?>alumni">Ikatan Alumni</a></li>
-															<!-- <li><a href="#">Interaksi</a></li> -->
-														</ul>
-													</li>
-													<li class="menu-item-has-children">
-														<a href="#">Layanan</a>                                                        
-														<ul class="sub-menu">
-															<li class="last-item menu-item-has-children">
-															    <a href="#">Informasi <i class="fi fi-rr-plus-small"></i></a>
-															    <ul class="sub-menu">
-															        <li><a href="<?= base_url(''); ?>post">Rilis Berita</a></li>
-															        <li><a href="<?= base_url(''); ?>category/pengumuman">Pengumuman</a></li>
-																	<li><a href="<?= base_url(''); ?>category/acara">Acara</a></li>
-															    </ul>
-															</li>  
-															<li><a href="https://perpustakaan.unusia.ac.id/">Perpustakaan Digital</a></li>
-															<li><a href="<?= base_url(''); ?>labhukum">Laboratorium Hukum</a></li>
-															<li><a href="<?= base_url(''); ?>konsulhukum">Konsultasi Hukum</a></li>
-															<li><a href="#">Pusdak Unusia</a></li>
-															<li><a href="https://sianas.unusia.ac.id/">Sianas Unusia</a></li>
-															<li><a href="https://lppmi.unusia.ac.id/pengaduan">Aduan Online</a></li>
-														</ul>
-													</li>
-													
-												</ul> <!-- //.nav-menu -->
-											</nav>
-										</div> <!-- //.main-menu -->
-									</div>
-								</div>
-								<div class="col-cell">
-									<div class="expand-btn-inner">
-										<ul>
-                                            <li class="btn-quote"><a class="quote-button" href="https://wa.me/<?= $site['site_wa']; ?>">Live Chat</a></li>
-											<li class="humburger">
-											    <a id="nav-expander" class="nav-expander bar" href="#">
-											        <div class="bar">
-											            <span class="dot1"></span>
-											            <span class="dot2"></span>
-											            <span class="dot3"></span>
-											            <span class="dot4"></span>
-											            <span class="dot5"></span>
-											            <span class="dot6"></span>
-											            <span class="dot7"></span>
-											            <span class="dot8"></span>
-											            <span class="dot9"></span>
-											        </div>
-											    </a>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Menu End -->
-
-					<!-- Canvas Menu start -->
-					<nav class="right_menu_togle menu-wrap-off  hidden-md">
-					    <div class="close-btn">
-					        <a id="nav-close" class="nav-close">
-					            <div class="line">
-					                <span class="line1"></span>
-					                <span class="line2"></span>
-					            </div>
-					        </a>
-					    </div>
-					    <div class="rs-offcanvas-inner">
-					        <div class="canvas-logo">
-					            <a href="#"><img src="<?= base_url(''); ?>assets/reno/images/logo-dark.png" alt="logo"></a>
-					        </div>
-					        <div class="offcanvas-text">
-					            <p>Fakultas Hukum, Universitas Nahdlatul Ulama Indonesia</p>
-					        </div>
-					        <div class="canvas-contact">
-					            <div class="address-area">
-					                <div class="address-list">
-					                    <div class="info-icon">
-					                        <i class="flaticon-location"></i>
-					                    </div>
-					                    <div class="info-content">
-					                        <h4 class="title">Address</h4>
-					                        <em>Unusia Jakarta</em>
-					                    </div>
-					                </div>
-					                <div class="address-list">
-					                    <div class="info-icon">
-					                        <i class="flaticon-email"></i>
-					                    </div>
-					                    <div class="info-content">
-					                        <h4 class="title">Email</h4>
-					                        <em><a href="mailto:<?= $site['site_mail']; ?>"><?= $site['site_mail']; ?></a></em>
-					                    </div>
-					                 </div>
-					                <div class="address-list">
-					                    <div class="info-icon">
-					                      <i class="flaticon-call"></i>
-					                    </div>
-					                    <div class="info-content">
-					                      <h4 class="title">Phone</h4>
-					                      <em><?= $site['site_wa']; ?></em>
-					                    </div>
-					                </div>
-					            </div>
-					            <ul class="social">
-					                <li><a href="<?= $site['site_facebook']; ?>"><i class="fa fa-facebook"></i></a></li>
-					                <li><a href="<?= $site['site_twitter']; ?>"><i class="fa fa-tiktok"></i></a></li>
-					                <li><a href="<?= $site['site_instagram']; ?>"><i class="fa fa-instagram"></i></a></li>
-					                <!-- <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li> -->
-					            </ul>
-					        </div>
-					    </div>
-					</nav>
-					<!-- Canvas Menu end -->
-
-					<!-- Canvas Mobile Menu start -->
-					<nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
-					    <div class="close-btn">
-					        <a id="nav-close2" class="nav-close">
-					            <div class="line">
-					                <span class="line1"></span>
-					                <span class="line2"></span>
-					            </div>
-					        </a>
-					    </div>
-					    <ul class="nav-menu">
-					    	<li>
-					    		<a href="/">Home</a>
-					    	</li>
-					    	<li class="menu-item-has-children">
-					    		<a href="#">Tentang</a>
-					    		<ul class="sub-menu">
-									<li><a href="<?= base_url(''); ?>sejarah">Sejarah</a></li>
-									<li><a href="<?= base_url(''); ?>vmts">Visi Misi</a></li>
-									<li><a href="<?= base_url(''); ?>renstra">Renstra</a></li>
-									<li><a href="<?= base_url(''); ?>pengelola">Pengelola</a></li>
-									<li><a href="https://lppmi.unusia.ac.id/akreditasi">Akreditasi</a></li>
-					    		</ul>
-					    	</li>
-					    	<li class="menu-item-has-children">
-					    		<a href="#">Program</a>
-					    		<ul class="sub-menu">
-					    			<li class="last-item menu-item-has-children">
-					    			    <a href="#">Program Studi</a>
-					    			    <ul class="sub-menu">
-											<li><a href="https://unusia.ac.id/prodi/s1ilmuhukum">S1 Ilmu Hukum</a></li>
-											<li><a href="https://unusia.ac.id/prodi/s1hukumkeluarga">S1 Hukum Keluarga</a></li>
-					    			    </ul>
-					    			</li>
-									<li class="last-item menu-item-has-children">
-					    			    <a href="#">Dokumen Fakultas</a>
-					    			    <ul class="sub-menu">
-											<li><a href="<?= base_url(''); ?>dokumen">Semua Dokumen</a></li>
-											<li><a href="<?= base_url(''); ?>dokumen/peraturan">Peraturan</a></li>
-											<li><a href="<?= base_url(''); ?>dokumen/keputusan">Keputusan</a></li>
-											<li><a href="<?= base_url(''); ?>dokumen/panduan">Panduan</a></li>
-					    			    </ul>
-					    			</li>
-					    			<li><a href="<?= base_url(''); ?>riset">Penelitian</a></li>
-									<li><a href="<?= base_url(''); ?>pkm">Pengabdian Masyarakat</a></li>
-									<li><a href="<?= base_url(''); ?>upm">Penjaminan Mutu</a></li>     
-					    		</ul>
-					    	</li>
-							<li class="menu-item-has-children">
-					    		<a href="#">Dosen</a>
-					    		<ul class="sub-menu">
-									<li class="last-item menu-item-has-children">
-					    			    <a href="#">Data Dosen (Dikti)</a>
-					    			    <ul class="sub-menu">
-											<li><a href="https://pddikti.kemdikbud.go.id/detail-prodi/mlC7THBoT0TlQh2zFWkcXa-Jq0DQzt5J7jaRB0f3gBvP-uuD4XPJzmM3hDb0XPAXcQc_Ew==">S1 Ilmu Hukum</a></li>
-											<li><a href="https://pddikti.kemdikbud.go.id/detail-prodi/S0zFWLcrTQxt19oY1G1Fdnmp3u5wlKr98A94gXmkMo_i0uNBpogOlSFxySQIRIATf-bUxg==">S1 Hukum Keluarga</a></li>
-					    			    </ul>
-					    			</li>
-					    			<li class="last-item menu-item-has-children">
-					    			    <a href="#">Data Dosen (Sinta)</a>
-										<ul class="sub-menu">
-											<li><a href="https://sinta.kemdikbud.go.id/departments/authors/8113/BE378CE8-6194-40A8-BEEF-13CBF2F98870/65A38807-09F4-406A-909D-2D3C5716F8DF">S1 Ilmu Hukum</a></li>
-											<li><a href="https://sinta.kemdikbud.go.id/departments/authors/8113/BE378CE8-6194-40A8-BEEF-13CBF2F98870/856C29AA-4090-406D-B844-18175D3462D3">S1 Hukum Keluarga</a></li>
-										</ul>
-					    			</li>
-					    			<li><a href="<?= base_url(''); ?>publikasidosen">Publikasi Dosen</a></li>     
-					    		</ul>
-					    	</li>
-					    	<li class="menu-item-has-children">
-					    		<a href="#">Mahasiswa</a>
-					    		<ul class="sub-menu">
-									<li><a href="https://pmb.unusia.ac.id/">Penerimaan Mahasiswa</a></li>
-									<li><a href="<?= base_url(''); ?>ormawa">Organisasi Mahasiswa</a></li>
-									<li><a href="<?= base_url(''); ?>publikasimahasiswa">Publikasi Mahasiswa</a></li>
-					    		</ul>
-					    	</li>
-							<li class="menu-item-has-children">
-					    		<a href="#">Alumni</a>
-					    		<ul class="sub-menu">
-									<li><a href="#">Tracer Study</a></li>
-									<li><a href="<?= base_url(''); ?>alumni">Ikatan Alumni</a></li>
-					    		</ul>
-					    	</li>
-							<li class="menu-item-has-children">
-					    		<a href="#">Layanan</a>
-					    		<ul class="sub-menu">
-									<li class="last-item menu-item-has-children">
-					    			    <a href="#">Informasi</a>
-					    			    <ul class="sub-menu">
-											<li><a href="<?= base_url(''); ?>post">Rilis Berita</a></li>
-											<li><a href="<?= base_url(''); ?>category/pengumuman">Pengumuman</a></li>
-											<li><a href="<?= base_url(''); ?>category/acara">Acara</a></li>
-					    			    </ul>
-					    			</li>
-									<li><a href="https://perpustakaan.unusia.ac.id/">Perpustakaan Digital</a></li>
-									<li><a href="<?= base_url(''); ?>labhukum">Laboratorium Hukum</a></li>
-									<li><a href="<?= base_url(''); ?>konsulhukum">Konsultasi Hukum</a></li>
-									<li><a href="#">Pusdak Unusia</a></li>
-									<li><a href="https://sianas.unusia.ac.id/">Sianas Unusia</a></li>
-									<li><a href="https://lppmi.unusia.ac.id/pengaduan">Aduan Online</a></li>
-					    		</ul>
-								
-					    	</li>
-					    </ul> <!-- //.nav-menu -->
-					    <!-- //.nav-menu -->
-					   
-					    <!-- //.nav-menu -->
-					    <div class="canvas-contact">
-					          <div class="address-area">
-					              <div class="address-list">
-					                  <div class="info-icon">
-					                      <i class="flaticon-location"></i>
-					                  </div>
-					                  <div class="info-content">
-					                      <h4 class="title">Address</h4>
-					                      <em>Unusia Jakarta</em>
-					                  </div>
-					              </div>
-					              <div class="address-list">
-					                  <div class="info-icon">
-					                      <i class="flaticon-email"></i>
-					                  </div>
-					                  <div class="info-content">
-					                      <h4 class="title">Email</h4>
-					                      <em><a href="mailto:<?= $site['site_mail']; ?>"><?= $site['site_mail']; ?></a></em>
-					                  </div>
-					              </div>
-					              <div class="address-list">
-					                  <div class="info-icon">
-					                      <i class="flaticon-call"></i>
-					                  </div>
-					                  <div class="info-content">
-					                      <h4 class="title">Phone</h4>
-					                      <em>+<?= $site['site_wa']; ?></em>
-					                  </div>
-					              </div>
-					          </div>
-					    </div>
-					</nav>
-					<!-- Canvas Menu end -->                             
-				</header>
-				<!--Header End-->
+				</div>
 			</div>
-			<!--Full width header End-->
+		</div>
+
+		<!-- Header Upper -->
+		<div class="header-upper">
+			<div class="auto-container">
+				<div class="inner-container">
+					<div class="d-flex justify-content-between align-items-center flex-wrap">
+						
+						<div class="logo-box">
+							<div class="logo"><a href="/"><img src="<?= base_url(''); ?>assets/quran/images/ysgj-logo2.png" alt="" title=""></a></div>
+						</div>
+						
+						<div class="nav-outer">
+							<!-- Main Menu -->
+							<nav class="main-menu navbar-expand-sm">
+								<div class="navbar-header">
+									<!-- Toggle Button -->    	
+									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+								</div>
+								
+								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
+									<ul class="navigation clearfix">
+										<li class="dropdown"><a href="#">Home</a>
+										</li>
+										<li class="dropdown"><a href="#">Tentang</a>
+											<ul>
+												<li><a href="/vmts">Visi Misi</a></li>
+												<li><a href="/nilai2">Nilai-nilai</a></li>
+												<li class="dropdown"><a href="#">Profil</a>
+													<ul>
+														<li><a href="/sejarah">Sejarah</a></li>
+														<li><a href="/pengelola">Struktur Organisasi</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown"><a href="#">Program</a>
+											<ul>
+												<li class="dropdown"><a href="#">Pendidikan</a>
+													<ul>
+														<li><a href="/tk">TK</a></li>
+														<li><a href="/sd">SD</a></li>
+														<li><a href="/smp">SMP</a></li>
+														<li><a href="/sma">SMA</a></li>
+														<li><a href="#">PT</a></li>
+														<!-- <li><a href="#">Pusat Talenta</a></li> -->
+													</ul>
+												</li>
+												<li><a href="/pemberdayaan">Pemberdayaan</a></li>
+												<li><a href="/sosialdakwah">Sosial dan Dakwah</a></li>
+											</ul>
+										</li>
+										<li><a href="/kerjasama">Kerjasama</a></li>
+										<li class="dropdown"><a href="#">Informasi</a>
+											<ul>
+												<li><a href="<?= base_url(''); ?>/post">Berita</a></li>
+												<li><a href="<?= base_url(''); ?>category/artikel">Artikel</a></li>
+												<li><a href="<?= base_url(''); ?>gallery">Gallery</a></li>
+											</ul>
+										</li>
+										<li><a href="/kontak">Kontak</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+						
+						<!-- Main Menu End-->
+						<div class="outer-box d-flex align-items-center flex-wrap">
+							
+							<!-- Search Btn -->
+							<div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span></div>
+
+							<!-- User Box -->
+							<a class="user-box theme-btn" href="/login">
+								<span class="fa-regular fa-user fa-fw"></span>
+							</a>
+
+							<!-- Mobile Navigation Toggler -->
+							<div class="mobile-nav-toggler"><span class="icon flaticon-menu"></span></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End Header Upper-->
+		
+		<!-- Mobile Menu  -->
+		<div class="mobile-menu">
+			<div class="menu-backdrop"></div>
+			<div class="close-btn"><span class="icon flaticon-close-1"></span></div>
+			
+			<nav class="menu-box">
+				<div class="nav-logo"><a href="/"><img src="<?= base_url(''); ?>assets/quran/images/logo-ysgj.png" alt="" title=""></a></div>
+				<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+			</nav>
+		</div>
+		<!-- End Mobile Menu -->
+	
+	</header>
+	<!-- End Main Header -->
+	
