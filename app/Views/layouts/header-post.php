@@ -93,7 +93,7 @@
 								
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
-										<li class="dropdown"><a href="#">Home</a>
+										<li class="dropdown"><a href="/">Home</a>
 										</li>
 										<li class="dropdown"><a href="#">Tentang</a>
 											<ul>
@@ -111,10 +111,10 @@
 											<ul>
 												<li class="dropdown"><a href="#">Pendidikan</a>
 													<ul>
-														<li><a href="/tk">TK</a></li>
-														<li><a href="/sd">SD</a></li>
-														<li><a href="/smp">SMP</a></li>
-														<li><a href="/sma">SMA</a></li>
+														<li><a href="<?= base_url(''); ?>edu/tk">TK</a></li>
+														<li><a href="<?= base_url(''); ?>edu/sd">SD</a></li>
+														<li><a href="<?= base_url(''); ?>edu/smp">SMP</a></li>
+														<li><a href="<?= base_url(''); ?>edu/sma">SMA</a></li>
 														<li><a href="#">PT</a></li>
 														<!-- <li><a href="#">Pusat Talenta</a></li> -->
 													</ul>

@@ -25,7 +25,7 @@ $routes->set404Override();
 // where controller filters or CSRF protection are bypassed.
 // If you don't want to define all routes, please use the Auto Routing (Improved).
 // Set `$autoRoutesImproved` to true in `app/Config/Feature.php` and set the following to true.
-// $routes->setAutoRoute(false);
+// $routes->setAutoRoute(true);
 
 /*
  * --------------------------------------------------------------------
@@ -72,10 +72,14 @@ $routes->get('publikasimahasiswa/(:segment)', 'CategoryLapController::index/$1')
 $routes->get('vmts', 'TtgVmtsController::index');
 $routes->get('nilai2', 'TtgNilai2Controller::index');
 $routes->get('sejarah', 'TtgSejarahController::index');
-$routes->get('renstra', 'TtgRenstraController::index');
 $routes->get('pengelola', 'TtgPengelolaController::index');
 
-$routes->get('dosen', 'AbDosenController::index');
+# Program 
+$routes->get('edu', 'PrgPendidikanController::index');
+$routes->get('edu/tk', 'PrgPendidikanController::tk/$1');
+$routes->get('edu/sd', 'PrgPendidikanController::sd/$1');
+$routes->get('edu/smp', 'PrgPendidikanController::smp/$1');
+$routes->get('edu/sma', 'PrgPendidikanController::sma/$1');
 
 // AkreditasiController
 $routes->get('akreditasi', 'AkreditasiController::index');
