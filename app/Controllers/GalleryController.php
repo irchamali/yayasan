@@ -27,6 +27,6 @@ class GalleryController extends BaseController
             'title' => 'Gallery',
             'active' => 'Gallery'
         ];
-        return view('gallery_view', $data);
+        return view('pages/gallery_view', $data);
     }
 }

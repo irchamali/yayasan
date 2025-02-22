@@ -83,18 +83,8 @@ $routes->get('edu/sma', 'PrgPendidikanController::sma/$1');
 $routes->get('pemberdayaan', 'PrgPemberdayaanController::index');
 $routes->get('sosialdakwah', 'PrgSosdakController::index');
 
-// AkreditasiController
-$routes->get('akreditasi', 'AkreditasiController::index');
-
-// Controller pada Program dll
-$routes->get('riset', 'PrgRisetController::index');
-$routes->get('pkm', 'PrgPkmController::index');
-$routes->get('upm', 'PrgUpmController::index');
-
-$routes->get('ormawa', 'XOrmawaController::index');
-$routes->get('alumni', 'XAlumniController::index');
-$routes->get('labhukum', 'XLabController::index');
-$routes->get('konsulhukum', 'XKonsulController::index');
+// KerjasamaController
+$routes->get('kerjasama', 'PartnershipController::index');
 
 // DocumentController
 $routes->get('dokumen', 'DocumentController::index');
