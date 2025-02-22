@@ -98,7 +98,7 @@
 								
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
-										<li class="dropdown"><a href="#">Home</a>
+										<li class="dropdown"><a href="/">Home</a>
 										</li>
 										<li class="dropdown"><a href="#">Tentang</a>
 											<ul>
@@ -171,7 +171,7 @@
 			<div class="close-btn"><span class="icon flaticon-close-1"></span></div>
 			
 			<nav class="menu-box">
-				<div class="nav-logo"><a href="/"><img src="<?= base_url(''); ?>assets/quran/images/logo-ysgj.png" alt="" title=""></a></div>
+				<div class="nav-logo"><a href="/"><img src="<?= base_url(''); ?>assets/quran/images/ysgj-logo2.png" alt="" title=""></a></div>
 				<div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
 			</nav>
 		</div>
