@@ -80,6 +80,8 @@ $routes->get('edu/tk', 'PrgPendidikanController::tk/$1');
 $routes->get('edu/sd', 'PrgPendidikanController::sd/$1');
 $routes->get('edu/smp', 'PrgPendidikanController::smp/$1');
 $routes->get('edu/sma', 'PrgPendidikanController::sma/$1');
+$routes->get('pemberdayaan', 'PrgPemberdayaanController::index');
+$routes->get('sosialdakwah', 'PrgSosdakController::index');
 
 // AkreditasiController
 $routes->get('akreditasi', 'AkreditasiController::index');
