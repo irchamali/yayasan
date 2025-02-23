@@ -4,7 +4,7 @@
 			<div class="inner-container d-flex justify-content-between align-items-center flex-wrap">
 				<div class="cta-two_bg" style="background-image:url(assets/quran/images/background/cta-one_bg.png)"></div>
 				<div class="cta-two_icon flaticon-nabawi-mosque"></div>
-				<h3 class="cta-two_heading">Yayasan Asy-Syarifiyyah Sunan Gunung Jati <br> Mengajak Kamu Semua Bersedekah</h3>
+				<h3 class="cta-two_heading">Yayasan Assyarifiyyah Sunan Gunung Jati <br> Mengajak Kamu Semua Bersedekah</h3>
 				<!-- Button Box -->
 				<div class="cta-two_button">
 					<a href="<?= $site['site_linkedin']; ?>" class="theme-btn btn-style-three">

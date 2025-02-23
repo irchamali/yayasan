@@ -97,12 +97,12 @@
 										</li>
 										<li class="dropdown"><a href="#">Tentang</a>
 											<ul>
-												<li><a href="/vmts">Visi Misi</a></li>
-												<li><a href="/nilai2">Nilai-nilai</a></li>
+												<li><a href="<?= base_url(''); ?>visimisi">Visi Misi</a></li>
+												<li><a href="<?= base_url(''); ?>nilai2">Nilai-nilai</a></li>
 												<li class="dropdown"><a href="#">Profil</a>
 													<ul>
-														<li><a href="/sejarah">Sejarah</a></li>
-														<li><a href="/pengelola">Struktur Organisasi</a></li>
+														<li><a href="<?= base_url(''); ?>sejarah">Sejarah</a></li>
+														<li><a href="<?= base_url(''); ?>pengelola">Struktur Organisasi</a></li>
 													</ul>
 												</li>
 											</ul>
