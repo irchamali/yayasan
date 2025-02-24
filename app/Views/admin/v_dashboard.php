@@ -9,7 +9,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="Ircham Ali" />
-    <link rel="shortcut icon" href="/assets/frontend/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="<?= base_url(''); ?>assets/backend/images/favicons/apple-touch-icon.png">
 
     <!-- Styles -->
     <link href="/assets/backend/plugins/pace-master/themes/blue/pace-theme-flash.css" rel="stylesheet" />

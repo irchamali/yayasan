@@ -58,9 +58,9 @@
                                             <th>Photo</th>
                                             <th>Name</th>
                                             <th>Jabatan</th>
-                                            <th>NIDN</th>
-                                            <th>Fokus Riset</th>
-                                            <th>Google Scholar</th>
+                                            <th>Portofolio</th>
+                                            <th>Facebook</th>
+                                            <th>Instagram</th>
                                             <th>linkedin</th>
                                             <th>Action</th>
                                         </tr>

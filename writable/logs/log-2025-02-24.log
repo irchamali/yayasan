@@ -34,3 +34,17 @@ in APPPATH\Views\pages\gallery_view.php on line 56.
  8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+CRITICAL - 2025-02-24 10:32:16 --> syntax error, unexpected 'endif' (T_ENDIF), expecting end of file
+in APPPATH\Views\layout\sidebar-dashboard.php on line 174.
+ 1 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\View\View.php(452): CodeIgniter\View\View->render('layout/sidebar-dashboard', null, true)
+ 3 APPPATH\Views\admin\v_laporan.php(47): CodeIgniter\View\View->include('layout/sidebar-dashboard')
+ 4 SYSTEMPATH\View\View.php(224): include('D:\\Codeigniter\\yayasan\\app\\Views\\admin\\v_laporan.php')
+ 5 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/v_laporan', [], true)
+ 7 APPPATH\Controllers\Admin\LapAdminController.php(37): view('admin/v_laporan', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\Admin\LapAdminController->index()
+ 9 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\LapAdminController))
+10 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')

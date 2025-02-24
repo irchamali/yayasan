@@ -6,7 +6,7 @@
             </a>
         </div>
         <div class="logo-box">
-            <a href="/<?= session('role'); ?>" class="logo-text"><span>UNUSIA</span></a>
+            <a href="/<?= session('role'); ?>" class="logo-text"><span>YSGJ</span></a>
         </div><!-- Logo Box -->
         <div class="topmenu-outer">
             <div class="top-menu">
@@ -164,27 +164,7 @@
             </li>
             
             <?php if (session('role') == 'admin') : ?>
-            <li class="droplink <?= ($title === "All Document") ? 'active open' : '' ?><?= ($title === "Category of Document") ? 'active open' : '' ?>"><a
-                    href="/<?= session('role'); ?>/document" class="waves-effect waves-button"><span
-                        class="menu-icon icon-link"></span>
-                    <p>Documents</p><span class="arrow"></span>
-                </a>
-                <ul class="sub-menu">
-                    <li class="<?= ($title === "All Document") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/document">Document</a></li>
-                    <li class="<?= ($title === "Category of Document") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/docscategory">Category</a></li>
-                </ul>
-            </li>
-
-            <li class="droplink <?= ($title === "Semua Publikasi") ? 'active open' : '' ?><?= ($title === "Kategori Publikasi") ? 'active open' : '' ?>"><a
-                    href="/<?= session('role'); ?>/publikasi" class="waves-effect waves-button"><span
-                        class="menu-icon icon-star"></span>
-                    <p>Publikasi</p><span class="arrow"></span>
-                </a>
-                <ul class="sub-menu">
-                    <li class="<?= ($title === "Semua Publikasi") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/publikasi">Publikasi</a></li>
-                    <li class="<?= ($title === "Kategori Publikasi") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/pudoscategory">Category</a></li>
-                </ul>
-            </li>
+            <!-- Dokumen == hide -->
 
             <li class="droplink <?= ($title === "Semua Laporan") ? 'active open' : '' ?><?= ($title === "Kategori Laporan") ? 'active open' : '' ?>"><a
                     href="/<?= session('role'); ?>/laporan" class="waves-effect waves-button"><span
@@ -196,16 +176,7 @@
                     <li class="<?= ($title === "Kategori Laporan") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/lapcategory">Kategori</a></li>                    
                 </ul>
             </li>
-            <li class="droplink <?= ($title === "Data Akreditasi") ? 'active open' : '' ?><?= ($title === "Data Program Studi") ? 'active open' : '' ?>"><a
-                    href="/<?= session('role'); ?>/laporan" class="waves-effect waves-button"><span
-                        class="menu-icon icon-flag"></span>
-                    <p>Pusat Data</p><span class="arrow"></span>
-                </a>
-                <ul class="sub-menu">                    
-                    <li class="<?= ($title === "Data Akreditasi") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/akreditasi">Akreditasi</a></li>
-                    <li class="<?= ($title === "Data Program Studi") ? 'active' : '' ?>"><a href="/<?= session('role'); ?>/prodi">Program Studi</a></li>                    
-                </ul>
-            </li>
+            
             <li class="<?= ($active == 'inbox') ? 'active' : '' ?>">
                 <a href="/<?= session('role'); ?>/inbox" class="waves-effect waves-button"><span
                         class="menu-icon icon-envelope"></span>
