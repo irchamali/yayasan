@@ -24,7 +24,7 @@
 				<div class="service-detail_image-column col-lg-6 col-md-12 col-sm-12">
 					<div class="service-detail_image-outer">
 						<div class="service-detail_image">
-							<img src="<?= base_url(''); ?>assets/quran/images/resource/service.png" alt="" />
+							<img src="<?= base_url(''); ?>assets/backend/images/home/<?= $about['about_image']; ?>" alt="" />
 						</div>
 					</div>
 				</div>

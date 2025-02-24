@@ -58,7 +58,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="input1" class="col-sm-2 control-label">Profil Singkat</label>
+                                        <label for="input1" class="col-sm-2 control-label">Sejarah</label>
                                         <div class="col-sm-10">
                                             <textarea name="description" class="form-control" rows="6" placeholder="Description"><?= $abouts['about_description']; ?></textarea>
                                         </div>
@@ -76,11 +76,17 @@
                                         </div>
                                     </div>
                                     <div class="form-group">
+                                        <label for="input1" class="col-sm-2 control-label">Nilai-nilai</label>
+                                        <div class="col-sm-10">
+                                            <textarea name="strategi" class="form-control" rows="6" placeholder="Nilai2"><?= $abouts['about_strategi']; ?></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="input1" class="col-sm-2 control-label">Image</label>
                                         <div class="col-sm-10">
                                             <input type="file" name="img_about" class="form-control" id="input1">
-                                            <p class="help-block">Image Heading harus beresolusi 456 x 470 Pixels.</p>
-                                            <img src="/assets/frontend/img/<?= $abouts['about_image']; ?>" width="300" class="thumbnail">
+                                            <p class="help-block">Image Heading harus beresolusi 743 x 576 Pixels.</p>
+                                            <img src="/assets/backend/images/home/<?= $abouts['about_image']; ?>" width="300" class="thumbnail">
                                         </div>
                                     </div>
                                     <div class="form-group">

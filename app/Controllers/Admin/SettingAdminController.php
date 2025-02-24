@@ -368,6 +368,12 @@ class SettingAdminController extends BaseController
                     'required' => 'Kolom {field} harus diisi!'
                 ]
             ],
+            'strategi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kolom {field} harus diisi!'
+                ]
+            ],
             'description' => [
                 'rules' => 'required',
                 'errors' => [
@@ -390,6 +396,7 @@ class SettingAdminController extends BaseController
         $name = strip_tags(htmlspecialchars($this->request->getPost('name'), ENT_QUOTES));
         $visi = strip_tags(htmlspecialchars($this->request->getPost('visi'), ENT_QUOTES));
         $misi = strip_tags(htmlspecialchars($this->request->getPost('misi'), ENT_QUOTES));
+        $strategi = strip_tags(htmlspecialchars($this->request->getPost('strategi'), ENT_QUOTES));
         $description = strip_tags(htmlspecialchars($this->request->getPost('description'), ENT_QUOTES));
 
         // Cek Foto
@@ -408,7 +415,8 @@ class SettingAdminController extends BaseController
             'about_image' => $namaImgAbout,
             'about_description' => $description,
             'about_visi' => $visi,
-            'about_misi' => $misi
+            'about_misi' => $misi,
+            'about_strategi' => $strategi
         ]);
         return redirect()->to('/admin/setting/about')->with('msg', 'success');
     }

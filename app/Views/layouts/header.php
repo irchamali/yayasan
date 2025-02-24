@@ -98,7 +98,7 @@
 								
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
-										<li class="dropdown"><a href="/">Home</a>
+										<li><a href="#">Home</a>
 										</li>
 										<li class="dropdown"><a href="#">Tentang</a>
 											<ul>

@@ -93,7 +93,7 @@
 								
 								<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
 									<ul class="navigation clearfix">
-										<li class="dropdown"><a href="/">Home</a>
+										<li><a href="<?= base_url(''); ?>">Home</a>
 										</li>
 										<li class="dropdown"><a href="#">Tentang</a>
 											<ul>
@@ -119,11 +119,11 @@
 														<!-- <li><a href="#">Pusat Talenta</a></li> -->
 													</ul>
 												</li>
-												<li><a href="/pemberdayaan">Pemberdayaan</a></li>
-												<li><a href="/sosialdakwah">Sosial dan Dakwah</a></li>
+												<li><a href="<?= base_url(''); ?>pemberdayaan">Pemberdayaan</a></li>
+												<li><a href="<?= base_url(''); ?>sosialdakwah">Sosial dan Dakwah</a></li>
 											</ul>
 										</li>
-										<li><a href="/kerjasama">Kerjasama</a></li>
+										<li><a href="<?= base_url(''); ?>kerjasama">Kerjasama</a></li>
 										<li class="dropdown"><a href="#">Informasi</a>
 											<ul>
 												<li><a href="<?= base_url(''); ?>post">Berita</a></li>
@@ -133,7 +133,7 @@
 												<li><a href="<?= base_url(''); ?>gallery">Gallery</a></li>
 											</ul>
 										</li>
-										<li><a href="/kontak">Kontak</a></li>
+										<li><a href="<?= base_url(''); ?>kontak">Kontak</a></li>
 									</ul>
 								</div>
 							</nav>

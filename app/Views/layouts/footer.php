@@ -62,10 +62,10 @@
 									<div class="footer-widget links-widget">
 										<h4 class="footer-title">Main Link</h4>
 										<ul class="footer-list">
-											<li><a href="#">Profil</a></li>
-											<li><a href="#">Pendidikan</a></li>
-											<li><a href="#">Pemberdayaan</a></li>
-											<li><a href="#">Sosial dan Dakwah</a></li>
+											<li><a href="<?= base_url(''); ?>sejarah">Profil</a></li>
+											<li><a href="<?= base_url(''); ?>edu">Pendidikan</a></li>
+											<li><a href="<?= base_url(''); ?>pemberdayaan">Pemberdayaan</a></li>
+											<li><a href="<?= base_url(''); ?>sosialdakwah">Sosial dan Dakwah</a></li>
 										</ul>
 									</div>
 								</div>
@@ -75,10 +75,10 @@
 									<div class="footer-widget links-widget">
 										<h4 class="footer-title">Other Link</h4>
 										<ul class="footer-list">
-											<li><a href="#">Kerjasama</a></li>
-											<li><a href="#">Rilis Berita</a></li>
+											<li><a href="<?= base_url(''); ?>kerjasama">Kerjasama</a></li>
+											<li><a href="<?= base_url(''); ?>post">Rilis Berita</a></li>
 											<!-- <li><a href="#">Dokumentasi</a></li> -->
-											<li><a href="#">Kontak</a></li>
+											<li><a href="<?= base_url(''); ?>kontak">Kontak</a></li>
 										</ul>
 									</div>
 								</div>
