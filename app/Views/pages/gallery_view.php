@@ -1,49 +1,35 @@
-<?= $this->extend('layout/template-home'); ?>
+<?= $this->extend('layouts/template-page'); ?>
 <?= $this->section('content'); ?>
+<!-- Sidebar Page Container -->
+<div class="sidebar-page-container">
+    	<div class="auto-container">
+        	<div class="row clearfix">
+				
+				<!-- Content Side -->
+                <div class="content-side col-lg-6 col-md-12 col-sm-12">
+					<div class="blog-list">
 
-<main id="main">
-
-    <!-- ======= Breadcrumbs ======= -->
-    <?= $this->include('layout/breadcrumbsx'); ?>
-    <!-- End Breadcrumbs -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio sections-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
-
-          <div>
-            <ul class="portfolio-flters">
-              <!-- <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-product">Product</li>
-              <li data-filter=".filter-branding">Branding</li>
-              <li data-filter=".filter-books">Books</li> -->
-            </ul><!-- End Portfolio Filters -->
-          </div>
-
-          <div class="row gy-4 portfolio-container">
-          <?php foreach ($posts as $post) : ?>
-            <div class="col-xl-4 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
-                <a href="/assets/backend/images/post/<?= $post['post_image']; ?>" data-gallery="portfolio-gallery-app" class="glightbox"><img src="/assets/backend/images/post/<?= $post['post_image']; ?>" class="img-fluid" alt=""></a>
-                <div class="portfolio-info">
-                  <h4><a href="/post/<?= $post['post_slug']; ?>" title="More Details"><?= $post['post_title']; ?></a></h4>
-                  <!-- <p>Lorem ipsum, dolor sit amet consectetur</p> -->
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <?php endforeach; ?>
-
-          </div><!-- End Portfolio Container -->
-
-        </div>
-
-      </div>
-    </section>
-    <!-- End Portfolio Section -->
-
-</main><!-- End #main -->
-
+						<!-- News Block Three -->
+                        <?php foreach ($posts as $post) : ?>
+						<div class="news-block_three">
+							<div class="news-block_three-inner">
+								<div class="news-block_three-image">
+									<a href="/post/<?= $post['post_slug']; ?>"><img src="/assets/backend/images/post/<?= $post['post_image']; ?>" alt="" /></a>
+								</div>
+								<div class="news-block_three-content">
+									<ul class="news-block_three-meta">
+										<!-- <li><span class="icon fa-brands fa-rocketchat fa-fw"></span>03 Comment</li> -->
+										<li><span class="icon fa-solid fa-star fa-fw"></span><?= $post['post_title']; ?></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+                        <?php endforeach; ?>
+						
+					</div>
+				</div>
+                
+			</div>
+		</div>
+	</div>
 <?= $this->endSection(); ?>
