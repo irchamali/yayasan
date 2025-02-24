@@ -7,18 +7,19 @@
 			<div class="swiper-wrapper">
 
 				<!-- Slide -->
+				<?php foreach ($sliders as $sld) : ?>
 				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url(<?= base_url(''); ?>assets/quran/images/main-slider/1.jpg)"></div>
+					<div class="slider-one_image-layer" style="background-image:url(<?= base_url(''); ?>assets/backend/images/slider/<?= $sld['slider_image']; ?>)"></div>
 					<div class="auto-container">
 						
 						<!-- Content Column -->
 						<div class="slider-one_content">
 							<div class="slider-one_content-inner">
 								<div class="slider-one_title">Yayasan Sunan Gunung Jati</div>
-								<h1 class="slider-one_heading">Santri Mandiri <br> dengan Kolaborasi</h1>
-								<div class="slider-one_text">Mari menjadi bagian dari pesantren dalam pengembangan peradaban islam yang moderat.</div>
+								<h1 class="slider-one_heading"><?= $sld['slider_title']; ?></h1>
+								<div class="slider-one_text"><?= $sld['slider_subtitle']; ?></div>
 								<div class="slider-one_button">
-									<a href="course-detail.html" class="theme-btn btn-style-two">
+									<a href="<?= $sld['slider_link']; ?>" class="theme-btn btn-style-two">
 										<span class="btn-wrap">
 											<span class="text-one">Read More</span>
 											<span class="text-two">Read More</span>
@@ -30,33 +31,7 @@
 						
 					</div>
 				</div>
-
-				<!-- Slide -->
-				<div class="swiper-slide">
-					<div class="slider-one_image-layer" style="background-image:url(<?= base_url(''); ?>assets/quran/images/main-slider/2.jpg)"></div>
-					<div class="auto-container">
-						
-						<!-- Content Column -->
-						<div class="slider-one_content">
-							<div class="slider-one_content-inner">
-								<div class="slider-one_title">Yayasan Sunan Gunung Jati</div>
-								<h1 class="slider-one_heading">Muda Bertalenta <br> Tua Penuh Hikmah</h1>
-								<div class="slider-one_text">Mari menjadi bagian dari pesantren dalam pengembangan peradaban islam yang moderat.</div>
-								<div class="slider-one_button">
-									<a href="course-detail.html" class="theme-btn btn-style-two">
-										<span class="btn-wrap">
-											<span class="text-one">Read More</span>
-											<span class="text-two">Read More</span>
-										</span>
-									</a>
-								</div>
-							</div>
-						</div>
-						
-					</div>
-				</div>
-
-
+				<?php endforeach; ?>
 			</div>
 			<div class="slider-one-arrow">
 				<!-- If we need navigation buttons -->
@@ -133,7 +108,7 @@
 										<i class="flaticon-give"></i>
 									</div>
 									<div class="students-one_counter-count"><span class="odometer" data-count="18000"></span></div>
-									<div class="students-one_counter-text">Active Students</div>
+									<div class="students-one_counter-text">Santri</div>
 								</div>
 							</div>
 						</div>
@@ -158,7 +133,7 @@
 										</div>
 									</div>
 									<h4 class="top-rated_heading">Pendidikan</h4>
-									<div class="top-rated_text">Lorem ipsum generators on the internet tend to repeat predefined chunks necessary on making this the first velit esse cillum dolore</div>
+									<div class="top-rated_text">Sistem pendidikan berbasis keislaman yang menekankan pembelajaran kitab kuning, pembentukan karakter, serta penguatan akhlak dan spiritualitas santri melalui metode halaqah, sorogan, dan bandongan.</div>
 								</div>
 							</div>
 
@@ -170,7 +145,7 @@
 									<!-- <span class="fa-regular fa-star fa-fw"></span> -->
 									</div>
 									<h4 class="passout_heading">Pemberdayaan</h4>
-									<div class="passout_text">Lorem ipsum dolor sit amet, consectetur adipi scing elit, sed do eiusmod tempor incididunt to labore et dolore pass out</div>
+									<div class="passout_text">Pemberdayaan dilakukan melalui berbagai program yang bertujuan meningkatkan kesejahteraan, kemandirian, serta keterampilan masyarakat sekitar, seperti pelatihan wirausaha, koperasi pesantren, dan dakwah berbasis komunitas.</div>
 								</div>
 							</div>
 
@@ -191,7 +166,7 @@
 				<h3 class="cta-one_heading">Mari bergabung bersama kami <br> dengan senang hati!</h3>
 				<!-- Button Box -->
 				<div class="cta-one_button">
-					<a href="contact.html" class="theme-btn btn-style-one">
+					<a href="/kontak" class="theme-btn btn-style-one">
 						<span class="btn-wrap">
 							<span class="text-one">Quick Start Now</span>
 							<span class="text-two">Quick Start Now</span>
@@ -218,8 +193,8 @@
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/quran/images/icons/bismillah-5.png)"></div>
 						<div class="institute-block_one-icon flaticon-quran-1"></div>
-						<h4 class="institute-block_one-heading"><a href="course-detail.html">Expert Quran <br> Tutor</a></h4>
-						<div class="institute-block_one-text">All the classes of online Quran teaching are conducted by well qualified Islamic scholars</div>
+						<h4 class="institute-block_one-heading"><a href="#">Tawadhu'</a></h4>
+						<div class="institute-block_one-text">Sikap rendah hati dan hormat kepada guru serta sesama, sebagai bentuk adab dalam menuntut ilmu dan berinteraksi.</div>
 					</div>
 				</div>
 
@@ -228,8 +203,8 @@
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/quran/images/icons/bismillah-5.png)"></div>
 						<div class="institute-block_one-icon flaticon-pray-1"></div>
-						<h4 class="institute-block_one-heading"><a href="course-detail.html">We Value Our <br> Students</a></h4>
-						<div class="institute-block_one-text">All the classes of online Quran teaching are conducted by well qualified Islamic scholars</div>
+						<h4 class="institute-block_one-heading"><a href="#">Istiqamah</a></h4>
+						<div class="institute-block_one-text">Kedisiplinan dalam menjalankan ibadah, belajar, dan beramal sebagai bentuk pengabdian kepada Allah.</div>
 					</div>
 				</div>
 
@@ -238,8 +213,8 @@
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/quran/images/icons/bismillah-5.png)"></div>
 						<div class="institute-block_one-icon flaticon-education"></div>
-						<h4 class="institute-block_one-heading"><a href="course-detail.html">Male Female <br> Teachers</a></h4>
-						<div class="institute-block_one-text">All the classes of online Quran teaching are conducted by well qualified Islamic scholars</div>
+						<h4 class="institute-block_one-heading"><a href="#">Ukhuwah <br> Islamiyah</a></h4>
+						<div class="institute-block_one-text">Rasa kebersamaan antar santri dalam membangun lingkungan yang harmonis dan penuh kasih sayang.</div>
 					</div>
 				</div>
 
@@ -248,8 +223,8 @@
 					<div class="institute-block_one-inner wow fadeInLeft"  data-wow-delay="150ms" data-wow-duration="1000ms">
 						<div class="institute-block_one-bismillah" style="background-image:url(<?= base_url(''); ?>assets/quran/images/icons/bismillah-5.png)"></div>
 						<div class="institute-block_one-icon flaticon-time-management"></div>
-						<h4 class="institute-block_one-heading"><a href="course-detail.html">Flexible <br> Timings</a></h4>
-						<div class="institute-block_one-text">All the classes of online Quran teaching are conducted by well qualified Islamic scholars</div>
+						<h4 class="institute-block_one-heading"><a href="#">Mujahadah</a></h4>
+						<div class="institute-block_one-text">Semangat dan ketekunan dalam belajar serta beribadah, meskipun menghadapi berbagai tantangan dan rintangan.</div>
 					</div>
 				</div>
 
@@ -284,6 +259,7 @@
 							<div class="swiper-wrapper">
 				
 								<!-- Slide -->
+								<?php foreach ($testimonials as $testi) : ?>
 								<div class="swiper-slide">
 									<!-- Testimonial Block One -->
 									<div class="testimonial-block_one">
@@ -296,43 +272,18 @@
 												<span class="fa-regular fa-star fa-fw"></span>
 											</div>
 											<h4 class="testimonial-block_one-heading">YSGJ Review</h4>
-											<div class="testimonial-block_one-text">Honestly i don’t have enough good words to write about resala academy everyone in resala academy are very nice very calm they are also flexible about your schedules. i just want say</div>
+											<div class="testimonial-block_one-text"><?= $testi['testimonial_content']; ?></div>
 											<div class="testimonial-block_one-author">
 												<div class="author-image">
-													<img src="<?= base_url(''); ?>assets/quran/images/resource/author-1.png" alt="" />
+													<img src="<?= base_url(''); ?>assets/backend/images/testi/<?= $testi['testimonial_image']; ?>" alt="" />
 												</div>
-												Muhammad Ahmad
-												<span>Ustadz</span>
+												<?= $testi['testimonial_name']; ?>
+												<span><?= $testi['testimonial_angkatan']; ?></span>
 											</div>
 										</div>
 									</div>
 								</div>
-
-								<!-- Slide -->
-								<div class="swiper-slide">
-									<!-- Testimonial Block One -->
-									<div class="testimonial-block_one">
-										<div class="testimonial-block_one-inner">
-											<div class="testimonial-block_one-rating">
-												<span class="fa-regular fa-star fa-fw"></span>
-												<span class="fa-regular fa-star fa-fw"></span>
-												<span class="fa-regular fa-star fa-fw"></span>
-												<span class="fa-regular fa-star fa-fw"></span>
-												<span class="fa-regular fa-star fa-fw"></span>
-											</div>
-											<h4 class="testimonial-block_one-heading">YSGJ Review</h4>
-											<div class="testimonial-block_one-text">Honestly i don’t have enough good words to write about resala academy everyone in resala academy are very nice very calm they are also flexible about your schedules. i just want say</div>
-											<div class="testimonial-block_one-author">
-												<div class="author-image">
-													<img src="<?= base_url(''); ?>assets/quran/images/resource/author-1.png" alt="" />
-												</div>
-												Siti Aisyah
-												<span>Ustadza</span>
-											</div>
-										</div>
-									</div>
-								</div>
-
+								<?php endforeach; ?>
 							</div>
 
 							<!-- If we need pagination -->
@@ -355,7 +306,7 @@
 			<!-- Sec Title -->
 			<div class="sec-title centered">
 				<div class="sec-title_title">YSGJ UPDATES</div>
-				<h2 class="sec-title_heading">Latest News & Articles</h2>
+				<h2 class="sec-title_heading">Latest Posts</h2>
 			</div>
 			<div class="row clearfix">
 
@@ -372,8 +323,7 @@
 								<li><span class="icon fa-solid fa-clock fa-fw"></span><time datetime="2022-01-01"><?= date('d M Y', strtotime($post['post_date'])); ?></time></li>
 							</ul>
 							<h5 class="news-block_one-heading"><a href="/post/<?= $post['post_slug']; ?>"><?= $post['post_title']; ?></a></h5>
-							<div class="news-block_one-text">There are many variations of passages of lorem Ipsum available islam courses</div>
-							
+							<div class="news-block"><?= substr($post['post_description'], 0, 70) . '...'; ?></div>
 						</div>
 					</div>
 				</div>
