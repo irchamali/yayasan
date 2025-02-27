@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\AboutModel;
-use App\Models\CommentModel;
+// use App\Models\CommentModel;
 use App\Models\HomeModel;
 use App\Models\PostviewModel;
 use App\Models\SiteModel;
@@ -21,7 +21,7 @@ class PostController extends BaseController
         $this->postviewModel = new PostviewModel();
         $this->tagModel = new TagModel();
         $this->categoryModel = new CategoryModel();
-        $this->commentModel = new CommentModel();
+        // $this->commentModel = new CommentModel();
     }
     public function index($slug = null)
     {
@@ -60,7 +60,7 @@ class PostController extends BaseController
             'related_post' => $this->postviewModel->get_related_post($category_id, $post_id)->getResultArray(),
             'categories' => $this->categoryModel->findAll(),
             'tags' => $this->tagModel->findAll(),
-            'comments' => $this->commentModel->show_comments($post_id)->getResultArray(),
+            // 'comments' => $this->commentModel->show_comments($post_id)->getResultArray(),
             'title' => 'Post',
             'active' => 'Post'
         ];

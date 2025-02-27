@@ -13,15 +13,24 @@ class PostviewModel extends Model
     protected $createdField  = 'post_date';
     protected $updatedField  = 'post_last_update';
 
+    // Post details without comment
     public function get_post_by_slug($slug)
     {
-        $query = $this->db->query("SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
-			LEFT JOIN tbl_user ON post_user_id=user_id
-			LEFT JOIN tbl_comment ON post_id=comment_post_id
-			LEFT JOIN tbl_category ON post_category_id=category_id
-			WHERE post_slug='$slug' GROUP BY post_id LIMIT 1");
+        $query = $this->db->query("
+            SELECT tbl_post.*, 
+                tbl_user.user_name, 
+                tbl_user.user_photo, 
+                tbl_category.*
+            FROM tbl_post
+            LEFT JOIN tbl_user ON tbl_post.post_user_id = tbl_user.user_id
+            LEFT JOIN tbl_category ON tbl_post.post_category_id = tbl_category.category_id
+            WHERE tbl_post.post_slug = '$slug'
+            GROUP BY tbl_post.post_id
+            LIMIT 1
+        ");
         return $query;
     }
+
     public function count_views($user_ip, $post_id)
     {
         $this->db->transStart();

@@ -315,3 +315,302 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
  8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
 10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Codeigniter\\yayasan\\public\\index.php')
+ERROR - 2025-02-26 21:47:45 --> mysqli_sql_exception: Expression #16 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'project_ysgj.tbl_comment.comment_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post...', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post...')
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post...')
+#3 /Users/irchamali/Projects/ci/yayasan/app/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post...')
+#4 /Users/irchamali/Projects/ci/yayasan/app/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudi...')
+#5 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudi...')
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/irchamali/Projects/ci/yayasan/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/irchamal...')
+#10 {main}
+CRITICAL - 2025-02-26 21:47:45 --> Expression #16 of SELECT list is not in GROUP BY clause and contains nonaggregated column 'project_ysgj.tbl_comment.comment_id' which is not functionally dependent on columns in GROUP BY clause; this is incompatible with sql_mode=only_full_group_by
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 4 APPPATH/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 5 APPPATH/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudisium-unusia-tahun-2024')
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudisium-unusia-tahun-2024')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+ERROR - 2025-02-26 21:48:46 --> mysqli_sql_exception: Table 'project_ysgj.tbl_comment' doesn't exist in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post...', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post...')
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post...')
+#3 /Users/irchamali/Projects/ci/yayasan/app/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post...')
+#4 /Users/irchamali/Projects/ci/yayasan/app/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudi...')
+#5 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudi...')
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/irchamali/Projects/ci/yayasan/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/irchamal...')
+#10 {main}
+CRITICAL - 2025-02-26 21:48:46 --> Table 'project_ysgj.tbl_comment' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 4 APPPATH/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 5 APPPATH/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudisium-unusia-tahun-2024')
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudisium-unusia-tahun-2024')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+ERROR - 2025-02-26 21:50:30 --> mysqli_sql_exception: Table 'project_ysgj.tbl_comment' doesn't exist in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post...', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post...')
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post...')
+#3 /Users/irchamali/Projects/ci/yayasan/app/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post...')
+#4 /Users/irchamali/Projects/ci/yayasan/app/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudi...')
+#5 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudi...')
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/irchamali/Projects/ci/yayasan/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/irchamal...')
+#10 {main}
+CRITICAL - 2025-02-26 21:50:30 --> Table 'project_ysgj.tbl_comment' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 4 APPPATH/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post.*,user_name,user_photo,tbl_comment.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 5 APPPATH/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudisium-unusia-tahun-2024')
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudisium-unusia-tahun-2024')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+ERROR - 2025-02-26 21:52:42 --> mysqli_sql_exception: Unknown table 'user_photo' in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post...', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post...')
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post...')
+#3 /Users/irchamali/Projects/ci/yayasan/app/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post...')
+#4 /Users/irchamali/Projects/ci/yayasan/app/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudi...')
+#5 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudi...')
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/irchamali/Projects/ci/yayasan/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/irchamal...')
+#10 {main}
+CRITICAL - 2025-02-26 21:52:42 --> Unknown table 'user_photo'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post.*,user_name,user_photo.*,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			-- LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post.*,user_name,user_photo.*,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			-- LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post.*,user_name,user_photo.*,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			-- LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 4 APPPATH/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post.*,user_name,user_photo.*,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			-- LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 5 APPPATH/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudisium-unusia-tahun-2024')
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudisium-unusia-tahun-2024')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+ERROR - 2025-02-26 21:53:36 --> mysqli_sql_exception: Unknown table 'user_name' in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post...', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post...')
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post...')
+#3 /Users/irchamali/Projects/ci/yayasan/app/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post...')
+#4 /Users/irchamali/Projects/ci/yayasan/app/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudi...')
+#5 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudi...')
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/irchamali/Projects/ci/yayasan/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/irchamal...')
+#10 {main}
+CRITICAL - 2025-02-26 21:53:36 --> Unknown table 'user_name'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post.*,user_name.*,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			-- LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post.*,user_name.*,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			-- LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post.*,user_name.*,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			-- LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 4 APPPATH/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post.*,user_name.*,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			-- LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 5 APPPATH/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudisium-unusia-tahun-2024')
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudisium-unusia-tahun-2024')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+CRITICAL - 2025-02-26 21:53:50 --> Undefined index: user_name
+in APPPATH/Views/posts/post_detail.php on line 21.
+ 1 APPPATH/Views/posts/post_detail.php(21): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: user_name', '/Users/irchamali/Projects/ci/yayasan/app/Views/posts/post_detail.php', 21, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/Users/irchamali/Projects/ci/yayasan/app/Views/posts/post_detail.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('posts/post_detail', [], true)
+ 5 APPPATH/Controllers/PostController.php(67): view('posts/post_detail', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudisium-unusia-tahun-2024')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+ERROR - 2025-02-26 21:55:32 --> mysqli_sql_exception: Unknown table 'user_photo' in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post...', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post...')
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post...')
+#3 /Users/irchamali/Projects/ci/yayasan/app/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post...')
+#4 /Users/irchamali/Projects/ci/yayasan/app/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudi...')
+#5 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudi...')
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/irchamali/Projects/ci/yayasan/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/irchamal...')
+#10 {main}
+CRITICAL - 2025-02-26 21:55:32 --> Unknown table 'user_photo'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post.*,user_name,user_photo.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			-- LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post.*,user_name,user_photo.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			-- LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post.*,user_name,user_photo.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			-- LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 4 APPPATH/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post.*,user_name,user_photo.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			-- LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 5 APPPATH/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudisium-unusia-tahun-2024')
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudisium-unusia-tahun-2024')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+ERROR - 2025-02-26 21:59:38 --> mysqli_sql_exception: Table 'project_ysgj.tbl_comment' doesn't exist in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post...', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post...')
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post...')
+#3 /Users/irchamali/Projects/ci/yayasan/app/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post...')
+#4 /Users/irchamali/Projects/ci/yayasan/app/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudi...')
+#5 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudi...')
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/irchamali/Projects/ci/yayasan/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(47): require_once('/Users/irchamal...')
+#10 {main}
+CRITICAL - 2025-02-26 21:59:38 --> Table 'project_ysgj.tbl_comment' doesn't exist
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT tbl_post.*,user_name,user_photo.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT tbl_post.*,user_name,user_photo.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT tbl_post.*,user_name,user_photo.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 4 APPPATH/Models/PostviewModel.php(22): CodeIgniter\Database\BaseConnection->query('SELECT tbl_post.*,user_name,user_photo.*,COUNT(comment_id) AS comment_total,tbl_category.* FROM tbl_post 
+			LEFT JOIN tbl_user ON post_user_id=user_id
+			LEFT JOIN tbl_comment ON post_id=comment_post_id
+			LEFT JOIN tbl_category ON post_category_id=category_id
+			WHERE post_slug=\'pengumuman-yudisium-unusia-tahun-2024\' GROUP BY post_id LIMIT 1')
+ 5 APPPATH/Controllers/PostController.php(42): App\Models\PostviewModel->get_post_by_slug('pengumuman-yudisium-unusia-tahun-2024')
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\PostController->index('pengumuman-yudisium-unusia-tahun-2024')
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PostController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
