@@ -10,6 +10,11 @@ use App\Models\MemberModel;
 
 class PartnershipController extends BaseController
 {
+    protected $homeModel;
+    protected $siteModel;
+    protected $aboutModel;
+    protected $memberModel;
+    
     public function __construct()
     {
         $this->homeModel = new HomeModel();

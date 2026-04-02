@@ -12,6 +12,15 @@ use App\Models\PostviewModel;
 
 class HomeController extends BaseController
 {
+    // 1. TAMBAHKAN DEKLARASI INI DI SINI
+    protected $homeModel;
+    protected $siteModel;
+    protected $aboutModel;
+    protected $sliderModel;
+    protected $testimonialModel;
+    protected $memberModel;
+    protected $postviewModel;
+    
     public function __construct()
     {
         $this->homeModel = new HomeModel();

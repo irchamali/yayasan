@@ -9,25 +9,31 @@ class VisitorModel extends Model
     protected $table            = 'tbl_visitors';
     protected $primaryKey       = 'visit_id';
     protected $allowedFields    = ['visit_date', 'visit_ip', 'visit_platform'];
-
-    public function count_visitor($user_ip, $agent)
+    
+    // Update query
+    function count_visitor($user_ip, $agent)
     {
-        $cek_ip = $this->db->query("SELECT * FROM tbl_visitors WHERE visit_ip='$user_ip' AND DATE(visit_date)=CURDATE()")->getNumRows();
+        $cek_ip = $this->where('visit_ip', $user_ip)
+                    ->where('DATE(visit_date)', 'CURDATE()', false)
+                    ->countAllResults();
+
         if ($cek_ip < 1) {
-            $hsl = $this->db->query("INSERT INTO tbl_visitors (visit_ip,visit_platform) VALUES('$user_ip','$agent')");
-            return $hsl;
+            return $this->insert([
+                'visit_ip'      => $user_ip,
+                'visit_platform' => $agent,
+            ]);
         }
     }
+    
+    // Update query 
     function visitor_statistics()
     {
-        $query = $this->db->query("SELECT DATE_FORMAT(visit_date,'%d') AS tgl,COUNT(visit_ip) AS jumlah FROM tbl_visitors WHERE MONTH(visit_date)=MONTH(CURDATE()) GROUP BY DATE(visit_date)");
-
-        if ($query->getNumRows() > 0) {
-            foreach ($query->getResult() as $data) {
-                $result[] = $data;
-            }
-            return $result;
-        }
+        $query = $this->db->query("
+            SELECT DATE_FORMAT(visit_date,'%d') AS tgl, COUNT(visit_ip) AS jumlah 
+            FROM tbl_visitors 
+            WHERE MONTH(visit_date) = MONTH(CURDATE()) 
+            GROUP BY visit_date
+        ");
     }
 
     function count_all_visitors()
@@ -54,22 +60,41 @@ class VisitorModel extends Model
         return $query;
     }
 
+    // Update query
     function top_five_articles()
     {
-        $query = $this->db->query("SELECT * FROM tbl_post ORDER BY post_views DESC LIMIT 5");
-        return $query;
+        return $this->db->table('tbl_post')
+                        ->orderBy('post_views', 'DESC')
+                        ->limit(5)
+                        ->get()
+                        ->getResult();
     }
 
-    function count_visitor_this_month()
+    // Update query
+    // function count_visitor_this_month()
+    // {
+    //     return $this->selectCount('visit_id', 'tot_visitor')
+    //                 ->where('MONTH(visit_date)', 'MONTH(CURDATE())', false)
+    //                 ->get()
+    //                 ->getRowArray()['tot_visitor'];
+    // }
+    public function count_visitor_this_month()
     {
-        $query = $this->db->query("SELECT COUNT(*) tot_visitor FROM tbl_visitors WHERE MONTH(visit_date)=MONTH(CURDATE())");
-        return $query;
+        return $this->db->table('tbl_visitors')
+                        ->select('COUNT(visit_id) as tot_visitor')
+                        ->where('MONTH(visit_date)', date('m'))
+                        ->where('YEAR(visit_date)', date('Y'))
+                        ->get(); // <-- Harus ada get()
     }
 
+    // Update query
     function count_chrome_visitors()
     {
-        $query = $this->db->query("SELECT COUNT(*) chrome_visitor FROM tbl_visitors WHERE visit_platform='Chrome' AND MONTH(visit_date)=MONTH(CURDATE())");
-        return $query;
+        return $this->selectCount('visit_id', 'chrome_visitor')
+                    ->where('visit_platform', 'Chrome')
+                    ->where('MONTH(visit_date)', 'MONTH(CURDATE())', false)
+                    ->get()
+                    ->getRowArray()['chrome_visitor'];
     }
 
     function count_firefox_visitors()

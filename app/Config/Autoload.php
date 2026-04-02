@@ -68,6 +68,16 @@ class Autoload extends AutoloadConfig
 
     /**
      * -------------------------------------------------------------------
+     * Helpers
+     * -------------------------------------------------------------------
+     * This is a list of helper files to be autoloaded.
+     *
+     * @var array<string>
+     */
+    public $helpers = [];
+
+    /**
+     * -------------------------------------------------------------------
      * Files
      * -------------------------------------------------------------------
      * The files array provides a list of paths to __non-class__ files

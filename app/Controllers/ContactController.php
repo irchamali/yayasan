@@ -10,6 +10,12 @@ use App\Models\SiteModel;
 
 class ContactController extends BaseController
 {
+    protected $homeModel;
+    protected $siteModel;
+    protected $aboutModel;
+    protected $memberModel;
+    protected $inboxModel;
+
     public function __construct()
     {
         $this->homeModel = new HomeModel();

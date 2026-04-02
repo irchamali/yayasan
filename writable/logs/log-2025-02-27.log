@@ -1,0 +1,48 @@
+CRITICAL - 2025-02-27 00:15:17 --> Undefined variable: all_post_views
+in APPPATH/Views/admin/v_dashboard.php on line 71.
+ 1 APPPATH/Views/admin/v_dashboard.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: all_post_views', '/Users/irchamali/Projects/ci/yayasan/app/Views/admin/v_dashboard.php', 71, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/Users/irchamali/Projects/ci/yayasan/app/Views/admin/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH/Controllers/Admin/AdminController.php(79): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+CRITICAL - 2025-02-27 00:16:07 --> Undefined variable: all_post_views
+in APPPATH/Views/admin/v_dashboard.php on line 71.
+ 1 APPPATH/Views/admin/v_dashboard.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: all_post_views', '/Users/irchamali/Projects/ci/yayasan/app/Views/admin/v_dashboard.php', 71, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/Users/irchamali/Projects/ci/yayasan/app/Views/admin/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH/Controllers/Admin/AdminController.php(79): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+CRITICAL - 2025-02-27 00:16:29 --> Undefined variable: all_posts
+in APPPATH/Views/admin/v_dashboard.php on line 90.
+ 1 APPPATH/Views/admin/v_dashboard.php(90): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: all_posts', '/Users/irchamali/Projects/ci/yayasan/app/Views/admin/v_dashboard.php', 90, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/Users/irchamali/Projects/ci/yayasan/app/Views/admin/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH/Controllers/Admin/AdminController.php(79): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+CRITICAL - 2025-02-27 00:22:14 --> Undefined variable: all_post_views
+in APPPATH/Views/admin/v_dashboard.php on line 37.
+ 1 APPPATH/Views/admin/v_dashboard.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: all_post_views', '/Users/irchamali/Projects/ci/yayasan/app/Views/admin/v_dashboard.php', 37, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/Users/irchamali/Projects/ci/yayasan/app/Views/admin/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('admin/v_dashboard', [], true)
+ 5 APPPATH/Controllers/Admin/AdminController.php(79): view('admin/v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Admin\AdminController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\AdminController))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')

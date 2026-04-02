@@ -327,6 +327,18 @@ class App extends BaseConfig
 
     /**
      * --------------------------------------------------------------------------
+     * Allowed Hostnames
+     * --------------------------------------------------------------------------
+     *
+     * If set, allow only requests with hostnames listed. When empty,
+     * all hostnames are allowed (useful for local dev).
+     *
+     * @var string[]
+     */
+    public $allowedHostnames = [];
+
+    /**
+     * --------------------------------------------------------------------------
      * Reverse Proxy IPs
      * --------------------------------------------------------------------------
      *
@@ -343,7 +355,7 @@ class App extends BaseConfig
      *
      * @var string|string[]
      */
-    public $proxyIPs = '';
+    public array $proxyIPs = [];
 
     /**
      * --------------------------------------------------------------------------

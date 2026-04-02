@@ -23,6 +23,11 @@ class Filters extends BaseConfig
         'honeypot'      => Honeypot::class,
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
+
+        'forcehttps'    => \CodeIgniter\Filters\ForceHTTPS::class,
+        'pagecache'     => \CodeIgniter\Filters\PageCache::class,
+        'performance'   => \CodeIgniter\Filters\PerformanceMetrics::class,
+
         'authadmin'     => [
             \App\Filters\Auth::class,
             \App\Filters\AuthAdmin::class
@@ -47,7 +52,7 @@ class Filters extends BaseConfig
             // 'invalidchars',
         ],
         'after' => [
-            'toolbar',
+            // 'toolbar',
             // 'honeypot',
             // 'secureheaders',
         ],
@@ -78,4 +83,22 @@ class Filters extends BaseConfig
      * @var array
      */
     public $filters = [];
+    /**
+     * --------------------------------------------------------------------------
+     * REQUIRED FILTERS
+     * --------------------------------------------------------------------------
+     * The filters listed here will be applied before and after every request
+     * regardless of the route or other configuration.
+     */
+    public array $required = [
+        'before' => [
+            'forcehttps', // Force Global Secure Requests
+            'pagecache',  // Web Page Caching
+        ],
+        'after' => [
+            'pagecache',   // Web Page Caching
+            'performance', // Performance Metrics
+            // 'toolbar',  <--- KITA MATIKAN PAKSA DI SINI
+        ],
+    ];
 }

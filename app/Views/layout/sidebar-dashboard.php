@@ -18,68 +18,9 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <?php if (session('role') == 'admin') : ?>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic"
-                            data-toggle="dropdown"><i class="fa fa-envelope"></i><span
-                                class="badge badge-success pull-right"><?= $total_inbox; ?></span></a>
-                        <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
-
-                            <li>
-                                <p class="drop-title">Anda memiliki <?= $total_inbox; ?> pesan baru !</p>
-                            </li>
-                            <li class="dropdown-menu-list slimscroll messages">
-                                <ul class="list-unstyled">
-                                    <?php foreach ($inboxs as $row) : ?>
-                                    <li>
-                                        <a href="/<?= session('role') ?>/inbox/<?= $row['inbox_id']; ?>">
-                                            <div class="msg-img">
-                                                <div class="online on"></div><img class="img-circle"
-                                                    src="/assets/backend/images/user_blank.png" alt="">
-                                            </div>
-                                            <p class="msg-name"><?= $row['inbox_name']; ?></p>
-                                            <p class="msg-text"><?= word_limiter($row['inbox_message'], 5); ?></p>
-                                            <p class="msg-time">
-                                                <?= date('d-m-Y H:i:s', strtotime($row['inbox_created_at'])); ?></p>
-                                        </a>
-                                    </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </li>
-                            <li class="drop-all"><a href="/<?= session('role'); ?>/inbox" class="text-center">All
-                                    Messages</a></li>
-                        </ul>
-                    </li>
+                    
                     <?php endif; ?>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic"
-                            data-toggle="dropdown"><i class="fa fa-comment"></i><span
-                                class="badge badge-success pull-right"><?= $total_comment; ?></span></a>
-                        <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
-                            <li>
-                                <p class="drop-title">Anda memiliki <?= $total_comment; ?> komentar baru !</p>
-                            </li>
-                            <li class="dropdown-menu-list slimscroll messages">
-                                <ul class="list-unstyled">
-                                    <?php foreach ($comments as $row) : ?>
-                                    <li>
-                                        <a href="/<?= session('role'); ?>/comment">
-                                            <div class="msg-img">
-                                                <div class="online on"></div><img class="img-circle"
-                                                    src="/assets/backend/images/user_blank.png" alt="">
-                                            </div>
-                                            <p class="msg-name"><?= $row['comment_name']; ?></p>
-                                            <p class="msg-text"><?= word_limiter($row['comment_message'], 5); ?></p>
-                                            <p class="msg-time">
-                                                <?= date('d-m-Y H:i:s', strtotime($row['comment_date'])); ?></p>
-                                        </a>
-                                    </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </li>
-                            <li class="drop-all"><a href="/<?= session('role'); ?>/comment" class="text-center">All
-                                    Comments</a></li>
-                        </ul>
-                    </li>
+                    
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle waves-effect waves-button waves-classic"
                             data-toggle="dropdown">
@@ -91,14 +32,8 @@
                         <ul class="dropdown-menu dropdown-list" role="menu">
                             <li role="presentation"><a href="/<?= session('role'); ?>/setting/profile"><i
                                         class="fa fa-user"></i>My Profile</a></li>
-                            <li role="presentation"><a href="/<?= session('role'); ?>/comment/unpublish"><i
-                                        class="fa fa-comment"></i>Comments<span
-                                        class="badge badge-success pull-right"><?= $total_comment; ?></span></a></li>
-                            <?php if (session('role') == 'admin') : ?>
-                            <li role="presentation"><a href="/<?= session('role'); ?>/inbox"><i
-                                        class="fa fa-envelope"></i>Inbox<span
-                                        class="badge badge-success pull-right"><?= $total_inbox; ?></span></a></li>
-                            <?php endif; ?>
+                            <!-- inbox and comment deleted -->
+                            
                             <li role="presentation" class="divider"></li>
                             <li role="presentation"><a href="/logout"><i class="fa fa-sign-out m-r-xs"></i>Log out</a>
                             </li>
@@ -177,20 +112,8 @@
                 </ul>
             </li>
             
-            <li class="<?= ($active == 'inbox') ? 'active' : '' ?>">
-                <a href="/<?= session('role'); ?>/inbox" class="waves-effect waves-button"><span
-                        class="menu-icon icon-envelope"></span>
-                    <p>Inbox</p>
-                </a>
-            </li>
             <?php endif; ?>
 
-            <li class="<?= ($active == 'comment') ? 'active' : '' ?>">
-                <a href="/<?= session('role'); ?>/comment" class="waves-effect waves-button"><span
-                        class="menu-icon icon-bubbles"></span>
-                    <p>Comments</p>
-                </a>
-            </li>
             <?php if (session('role') == 'admin') : ?>
             <li class="<?= ($active == 'subscriber') ? 'active' : '' ?>">
                 <a href="/<?= session('role'); ?>/subscriber" class="waves-effect waves-button"><span
