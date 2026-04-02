@@ -450,3 +450,248 @@ in APPPATH/Controllers/Admin/AdminController.php on line 16.
  6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
  8 SYSTEMPATH/rewrite.php(44): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+CRITICAL - 2026-04-02 12:48:35 --> ErrorException: Creation of dynamic property App\Controllers\TtgVmtsController::$homeModel is deprecated
+[Method: GET, Route: visimisi]
+in APPPATH/Controllers/TtgVmtsController.php on line 14.
+ 1 APPPATH/Controllers/TtgVmtsController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\TtgVmtsController::$homeModel is deprecated', '/Users/irchamali/Projects/ci/yayasan/app/Controllers/TtgVmtsController.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\TtgVmtsController->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+ERROR - 2026-04-02 12:52:58 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ysgj', 3306, '', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Model.php(523): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 /Users/irchamali/Projects/ci/yayasan/app/Models/VisitorModel.php(18): CodeIgniter\Model->countAllResults()
+#6 /Users/irchamali/Projects/ci/yayasan/app/Controllers/BaseController.php(76): App\Models\VisitorModel->count_visitor('::1', 'Chrome 146.0.0....')
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(922): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/irchamali/Projects/ci/yayasan/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Users/irchamal...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Model.php(523): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 /Users/irchamali/Projects/ci/yayasan/app/Models/VisitorModel.php(18): CodeIgniter\Model->countAllResults()
+#5 /Users/irchamali/Projects/ci/yayasan/app/Controllers/BaseController.php(76): App\Models\VisitorModel->count_visitor('::1', 'Chrome 146.0.0....')
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(922): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#8 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/irchamali/Projects/ci/yayasan/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Users/irchamal...')
+#13 {main}
+CRITICAL - 2026-04-02 12:52:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: kontak]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_visitors`
+WHERE `visit_ip` = :visit_ip:
+AND DATE(visit_date) = :DATE(visit_date):', [...], false)
+ 3 SYSTEMPATH/Model.php(523): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH/Models/VisitorModel.php(18): CodeIgniter\Model->countAllResults()
+ 5 APPPATH/Controllers/BaseController.php(76): App\Models\VisitorModel->count_visitor('::1', 'Chrome 146.0.0.0')
+ 6 SYSTEMPATH/CodeIgniter.php(922): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 7 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+ERROR - 2026-04-02 12:53:20 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ysgj', 3306, '', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Model.php(523): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 /Users/irchamali/Projects/ci/yayasan/app/Models/VisitorModel.php(18): CodeIgniter\Model->countAllResults()
+#6 /Users/irchamali/Projects/ci/yayasan/app/Controllers/BaseController.php(76): App\Models\VisitorModel->count_visitor('::1', 'Chrome 146.0.0....')
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(922): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/irchamali/Projects/ci/yayasan/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Users/irchamal...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Model.php(523): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 /Users/irchamali/Projects/ci/yayasan/app/Models/VisitorModel.php(18): CodeIgniter\Model->countAllResults()
+#5 /Users/irchamali/Projects/ci/yayasan/app/Controllers/BaseController.php(76): App\Models\VisitorModel->count_visitor('::1', 'Chrome 146.0.0....')
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(922): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#8 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/irchamali/Projects/ci/yayasan/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Users/irchamal...')
+#13 {main}
+CRITICAL - 2026-04-02 12:53:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_visitors`
+WHERE `visit_ip` = :visit_ip:
+AND DATE(visit_date) = :DATE(visit_date):', [...], false)
+ 3 SYSTEMPATH/Model.php(523): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH/Models/VisitorModel.php(18): CodeIgniter\Model->countAllResults()
+ 5 APPPATH/Controllers/BaseController.php(76): App\Models\VisitorModel->count_visitor('::1', 'Chrome 146.0.0.0')
+ 6 SYSTEMPATH/CodeIgniter.php(922): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 7 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+ERROR - 2026-04-02 12:57:26 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ysgj' in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ysgj', 3306, '', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Model.php(523): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 /Users/irchamali/Projects/ci/yayasan/app/Models/VisitorModel.php(18): CodeIgniter\Model->countAllResults()
+#6 /Users/irchamali/Projects/ci/yayasan/app/Controllers/BaseController.php(76): App\Models\VisitorModel->count_visitor('::1', 'Chrome 146.0.0....')
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(922): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/irchamali/Projects/ci/yayasan/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Users/irchamal...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ysgj' in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Model.php(523): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 /Users/irchamali/Projects/ci/yayasan/app/Models/VisitorModel.php(18): CodeIgniter\Model->countAllResults()
+#5 /Users/irchamali/Projects/ci/yayasan/app/Controllers/BaseController.php(76): App\Models\VisitorModel->count_visitor('::1', 'Chrome 146.0.0....')
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(922): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#8 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/irchamali/Projects/ci/yayasan/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Users/irchamal...')
+#13 {main}
+CRITICAL - 2026-04-02 12:57:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ysgj'
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_visitors`
+WHERE `visit_ip` = :visit_ip:
+AND DATE(visit_date) = :DATE(visit_date):', [...], false)
+ 3 SYSTEMPATH/Model.php(523): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH/Models/VisitorModel.php(18): CodeIgniter\Model->countAllResults()
+ 5 APPPATH/Controllers/BaseController.php(76): App\Models\VisitorModel->count_visitor('::1', 'Chrome 146.0.0.0')
+ 6 SYSTEMPATH/CodeIgniter.php(922): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 7 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+ERROR - 2026-04-02 12:57:46 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ysgj' in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:201
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'ysgj', 3306, '', 0)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Model.php(523): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 /Users/irchamali/Projects/ci/yayasan/app/Models/VisitorModel.php(18): CodeIgniter\Model->countAllResults()
+#6 /Users/irchamali/Projects/ci/yayasan/app/Controllers/BaseController.php(76): App\Models\VisitorModel->count_visitor('::1', 'Chrome 146.0.0....')
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(922): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#8 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#11 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 /Users/irchamali/Projects/ci/yayasan/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Users/irchamal...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ysgj' in /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php:231
+Stack trace:
+#0 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(555): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Model.php(523): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 /Users/irchamali/Projects/ci/yayasan/app/Models/VisitorModel.php(18): CodeIgniter\Model->countAllResults()
+#5 /Users/irchamali/Projects/ci/yayasan/app/Controllers/BaseController.php(76): App\Models\VisitorModel->count_visitor('::1', 'Chrome 146.0.0....')
+#6 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(922): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+#7 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+#8 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(417): CodeIgniter\CodeIgniter->run()
+#10 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 /Users/irchamali/Projects/ci/yayasan/public/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 /Users/irchamali/Projects/ci/yayasan/vendor/codeigniter4/framework/system/rewrite.php(44): require_once('/Users/irchamal...')
+#13 {main}
+CRITICAL - 2026-04-02 12:57:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ysgj'
+[Method: GET, Route: /]
+in SYSTEMPATH/Database/BaseConnection.php on line 606.
+ 1 SYSTEMPATH/Database/BaseConnection.php(795): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1733): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `tbl_visitors`
+WHERE `visit_ip` = :visit_ip:
+AND DATE(visit_date) = :DATE(visit_date):', [...], false)
+ 3 SYSTEMPATH/Model.php(523): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH/Models/VisitorModel.php(18): CodeIgniter\Model->countAllResults()
+ 5 APPPATH/Controllers/BaseController.php(76): App\Models\VisitorModel->count_visitor('::1', 'Chrome 146.0.0.0')
+ 6 SYSTEMPATH/CodeIgniter.php(922): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 7 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 8 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH/rewrite.php(44): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+CRITICAL - 2026-04-02 12:58:09 --> ErrorException: Creation of dynamic property App\Controllers\TtgVmtsController::$homeModel is deprecated
+[Method: GET, Route: visimisi]
+in APPPATH/Controllers/TtgVmtsController.php on line 14.
+ 1 APPPATH/Controllers/TtgVmtsController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\TtgVmtsController::$homeModel is deprecated', '/Users/irchamali/Projects/ci/yayasan/app/Controllers/TtgVmtsController.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\TtgVmtsController->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
+CRITICAL - 2026-04-02 12:58:10 --> ErrorException: Creation of dynamic property App\Controllers\TtgVmtsController::$homeModel is deprecated
+[Method: GET, Route: visimisi]
+in APPPATH/Controllers/TtgVmtsController.php on line 14.
+ 1 APPPATH/Controllers/TtgVmtsController.php(14): CodeIgniter\Debug\Exceptions->errorHandler(8192, 'Creation of dynamic property App\\Controllers\\TtgVmtsController::$homeModel is deprecated', '/Users/irchamali/Projects/ci/yayasan/app/Controllers/TtgVmtsController.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(921): App\Controllers\TtgVmtsController->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH/Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH/index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH/rewrite.php(44): require_once('/Users/irchamali/Projects/ci/yayasan/public/index.php')
